@@ -4,13 +4,13 @@ body {
 }
 
 header {
-   position: fixed;
-   width: 100%;
-   text-decoration: none;
-   display: flex;
-   background-color: aqua;
-   justify-content: space-between;
-   align-items: baseline;
+  position: fixed;
+  width: 100%;
+  text-decoration: none;
+  display: flex;
+  background-color: aqua;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
 h1 {
@@ -18,13 +18,11 @@ h1 {
 }
 
 ul {
-    display: flex;
-    justify-content: flex-end;
-    
+  display: flex;
+  justify-content: flex-end;
 }
 
 li {
-    list-style: none;
-    width: 100px;
-    
+  list-style: none;
+  width: 100px;
 }
