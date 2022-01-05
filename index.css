@@ -6,15 +6,20 @@ body {
 header {
   position: fixed;
   width: 100%;
-  text-decoration: none;
   display: flex;
-  background-color: aqua;
+  background: #3E3C3C;
+  
   justify-content: space-between;
   align-items: baseline;
 }
 
 h1 {
   margin: 3%;
+}
+
+h1 a {
+  text-decoration: none;
+  color: #ffffff;  
 }
 
 ul {
@@ -25,4 +30,14 @@ ul {
 li {
   list-style: none;
   width: 100px;
+}
+
+li a {
+  padding: 10px;
+  text-decoration: none;
+  color: #ffffff;      
+}
+
+li a:hover {
+  background: #b3adad;
 }
