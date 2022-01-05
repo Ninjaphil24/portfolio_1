@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+   position: fixed;
+   width: 100%;
+   text-decoration: none;
+   display: flex;
+   background-color: aqua;
+   justify-content: space-between;
+   align-items: baseline;
+}
+
+h1 {
+  margin: 3%;
+}
+
+ul {
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+li {
+    list-style: none;
+    width: 100px;
+    
+}
