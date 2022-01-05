@@ -158,7 +158,6 @@ header li a:hover {
     flex: 2;
   }
 
-
   .home .text h2 {
     font-family: 'Crete Round', serif;
     font-style: normal;
@@ -216,7 +215,6 @@ header li a:hover {
     align-items: center;
   }
 
-
   .asidemobile ul li {
     list-style: none;
     height: 100px;
@@ -252,8 +250,6 @@ header li a:hover {
     left: 2%;
     margin-bottom: 30%;
   }
-
-
 
   .home .text h2 {
     font-family: 'Crete Round', serif;
@@ -298,7 +294,6 @@ header li a:hover {
     flex-wrap: nowrap;
     align-items: center;
   }
-
 
   .asidemobile ul li {
     list-style: none;
