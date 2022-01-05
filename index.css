@@ -8,6 +8,10 @@ body {
   background-color: #1c1a19;
 }
 
+header .mobile {
+  display: none;
+}
+
 header {
   position: absolute;
   width: 100%;
@@ -18,11 +22,9 @@ header {
   align-items: baseline;
 }
 
-header h1 {
+header a {
   margin: 3%;
-}
-
-header h1 a {
+  font-size: 30px;
   text-decoration: none;
   color: #fff;
 }
@@ -38,6 +40,7 @@ header li {
 }
 
 header li a {
+  font-size: 20px;
   padding: 10px;
   text-decoration: none;
   color: #fff;
@@ -47,48 +50,47 @@ header li a:hover {
   background: #b3adad;
 }
 
-aside {
+.asidemobile {
+  display: none;
+}
+
+.asidedesktop {
   position: absolute;
   margin-top: 30%;
   width: 40px;
 }
 
-aside ul {
+.asidedesktop ul {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
 }
 
-aside ul li {
+.asidedesktop ul li {
   list-style: none;
   height: 100px;
 }
 
-aside ul li i {
+.asidedesktop ul li i {
   color: #cfcfcf;
 }
 
-aside ul li a:hover i {
+.asidedesktop ul li a:hover i {
   color: rgb(248, 176, 245);
 }
 
 .home {
+  /* border: 1px solid white; */
   position: absolute;
   display: flex;
   top: 30vh;
+  width: 85%;
   left: 15%;
 }
 
 .home .text {
   flex: 1;
-}
-
-.home .image {
-  flex: 1;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
 }
 
 .home .text h2 {
@@ -118,6 +120,193 @@ aside ul li a:hover i {
   line-height: 32px;
 }
 
+.home .image {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
 #Vector {
-  height: 581.5px;
+  object-fit: contain;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 1000px) {
+  header .desktop {
+    display: none;
+  }
+
+  header .mobile {
+    display: flex;
+    color: #fff;
+    margin: 10%;
+  }
+
+  .home {
+    border: 1px solid white;
+    position: relative;
+    display: flex;
+    top: 15vh;
+    width: 98%;
+    left: 2%;
+    margin-bottom: 10%;
+  }
+
+  .home .text {
+    flex: 2;
+  }
+
+
+  .home .text h2 {
+    font-family: 'Crete Round', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 81px;
+    color: #f55800;
+  }
+
+  .home .text h3 {
+    color: #fff;
+    font-family: 'Inter', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  .home .text p {
+    color: #f4f5f7;
+    font-family: 'Inter', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .home .image {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  #Vector {
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+  }
+
+  .asidedesktop {
+    display: none;
+  }
+
+  .asidemobile {
+    display: block;
+    position: relative;
+    flex-wrap: nowrap;
+  }
+
+  .asidemobile ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+
+  .asidemobile ul li {
+    list-style: none;
+    height: 100px;
+    margin: 50px;
+  }
+
+  .asidemobile ul li i {
+    color: #cfcfcf;
+  }
+}
+
+@media (max-width: 450px) {
+  .home .image img {
+    display: none;
+  }
+
+  header .desktop {
+    display: none;
+  }
+
+  header .mobile {
+    display: flex;
+    color: #fff;
+    margin: 10%;
+  }
+
+  .home {
+    border: 1px solid white;
+    position: relative;
+    display: flex;
+    top: 15vh;
+    width: 98%;
+    left: 2%;
+    margin-bottom: 30%;
+  }
+
+
+
+  .home .text h2 {
+    font-family: 'Crete Round', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 41px;
+    color: #f55800;
+  }
+
+  .home .text h3 {
+    color: #fff;
+    font-family: 'Inter', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 44px;
+  }
+
+  .home .text p {
+    color: #f4f5f7;
+    font-family: 'Inter', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 32px;
+  }
+
+  .asidedesktop {
+    display: none;
+  }
+
+  .asidemobile {
+    display: block;
+    position: relative;
+    flex-wrap: nowrap;
+  }
+
+  .asidemobile ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+
+  .asidemobile ul li {
+    list-style: none;
+    height: 100px;
+    margin: 20px;
+  }
+
+  .asidemobile ul li i {
+    color: #cfcfcf;
+  }
 }
