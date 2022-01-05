@@ -1,6 +1,10 @@
 body {
   margin: 0;
   padding: 0;
+}
+
+.page1 {
+  height: 100vh;
   background-color: #1c1a19;
 }
 
@@ -70,7 +74,6 @@ aside ul li a:hover i {
 }
 
 .home {
-  border: 1px dashed mistyrose;
   position: absolute;
   display: flex;
   top: 30vh;
@@ -83,6 +86,9 @@ aside ul li a:hover i {
 
 .home .image {
   flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
 .home .text h2 {
@@ -110,4 +116,8 @@ aside ul li a:hover i {
   font-weight: normal;
   font-size: 20px;
   line-height: 32px;
+}
+
+#Vector {
+  height: 581.5px;
 }
