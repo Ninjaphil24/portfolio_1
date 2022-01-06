@@ -8,6 +8,11 @@ body {
   background-color: #1c1a19;
 }
 
+.page2 {
+  height: 100vh;
+  background-color: #E5E5E5;
+}
+
 header .mobile {
   display: none;
 }
@@ -133,6 +138,11 @@ header li a:hover {
   height: auto;
 }
 
+.page2 .title {
+    font-family: 'Crete Round', serif;
+    
+  }
+
 @media (max-width: 1000px) {
   header .desktop {
     display: none;
@@ -162,7 +172,7 @@ header li a:hover {
     font-style: normal;
     font-weight: normal;
     font-size: 40px;
-    line-height: 81px;
+    line-height: 33px;
     color: #f55800;
   }
 
@@ -172,7 +182,7 @@ header li a:hover {
     font-style: normal;
     font-weight: 500;
     font-size: 32px;
-    line-height: 44px;
+    line-height: 28px;
   }
 
   .home .text p {
@@ -223,9 +233,33 @@ header li a:hover {
   .asidemobile ul li i {
     color: #cfcfcf;
   }
+
+  .page2 .content {
+      margin-left: 24px;
+      margin-right: 24px;
+  }
+
+  .page2 .title {
+      background-color: #E5E5E5;
+      text-align: center;
+      padding-top: 50px;
+      font-size: 40px;
+  }
+
+
 }
 
-@media (max-width: 450px) {
+
+@media (max-width: 416px) {
+  .asidemobile ul li {
+    list-style: none;
+    height: 100px;
+    
+    margin:80px 20px;
+  }
+}
+
+@media (max-width: 350px) {
   .home .image img {
     display: none;
   }
