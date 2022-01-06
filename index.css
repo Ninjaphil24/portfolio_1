@@ -165,10 +165,11 @@ color: #FF6B00;
 
 .page2 .site1 {
     height: 350px;
-    background-image: url(images/offenbach.png);
+    background-image: url(images/offenbach1.png);
+}
 
-    /* linear-gradient(white,rgb(0, 0, 0)); */
-    
+.page2 .site2 {
+    background-image: url(images/spoiledeggs1.png);
 }
 
 .page2 .buttontypeB {
@@ -210,6 +211,7 @@ color: #FF6B00;
 
 .page2 .site1 ul li {
     background: grey;
+    opacity: 0.8;
     border: none;
     color: white;
     padding: 12px 20px;
