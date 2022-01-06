@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  
 }
 
 .page1 {
@@ -235,33 +236,39 @@ header li a:hover {
   }
 
   .page2 .container {
-      margin-left: 24px;
-      margin-right: 24px;
+      display: grid;
+      grid-template-rows: auto auto auto auto auto;
+      grid-template-columns: auto;
+      grid-gap: 24px;
+      background-color: #ffffff;
+      padding: 24px;
+      
   }
 
   .page2 .title1 {
-      background-color: #E5E5E5;
+      background-color: #ffffff;
       text-align: center;
       padding-top: 50px;
       font-size: 40px;
   }
   
   .page2 .title2 {
-      background-color: #E5E5E5;
+      background-color: #ffffff;
       text-align: left;
       padding-top: 50px;
       font-size: 40px;
   }
 
   .page2 img {
-      width:auto;
-      height: 100%;
-      object-fit: cover;
+      width:100%;      
+      object-fit: fill;
   }
 
   .page2 ul {
-      list-style-type: none;
+      list-style: none;
+      padding: 0;
       display: flex;
+      
   }
 
   .page2 ul li {
@@ -271,43 +278,16 @@ header li a:hover {
   }
 
   .page2 .buttontypeA {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 12px;
-    
-    position: static;
-    width: 124px;
-    height: 48px;
-    left: 0px;
-    top: 259px;
-    background: #FF6B00;
-    flex: none;
-    order: 3;
-    flex-grow: 0;
-    margin: 12px 0px;
+     margin-top: 10px;
     }
     
   .page2 .buttontypeA a {
     text-decoration: none;
-    width: 100px;
-    height: 24px;
-    left: 12px;
-    top: 12px;
     font-family: 'Inter', serif;
-    font-style: normal;
-    font-weight: bold;
     font-size: 17px;
-    line-height: 24px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: #FFFFFF;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    margin: 0px 10px;
+    color: white;
+    padding: 15px;
+    background-color: #FF6B00;
   }
 }
 
