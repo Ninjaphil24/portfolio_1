@@ -415,6 +415,16 @@ header li a:hover {
     color: #fff;
   }
 
+  .page3 .container .languages .header i {
+    transform: rotate(45deg); 
+    color: #FF6B00;
+  }
+  .page3 .container .frameworks .header i,
+  .page3 .container .skills .header i {
+    color: #FF6B00;
+  }
+
+
   .page3 .container .languages ul,
   .page3 .container .frameworks ul,
   .page3 .container .skills ul {
