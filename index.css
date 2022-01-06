@@ -155,6 +155,26 @@ header li a:hover {
   background-color: #ff6b00;
 }
 
+.page3 .buttontypeA a {
+  text-decoration: none;
+  font-family: 'Inter', serif;
+  font-size: 17px;
+  color: white;
+  padding: 15px;
+  background-color: #ff6b00;
+}
+
+.page2 .buttontypeB a {
+  display: block;
+  background: #ff6b00;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-decoration: none;
+  font-family: 'Inter', serif;
+  font-size: 20px;
+  color: white;
+}
+
 .page2 .buttontypeA a:hover {
   background-color: #fff5e1;
   border: 1px solid #ff6b00;
@@ -163,15 +183,6 @@ header li a:hover {
 
 .page3 .buttontypeA {
   margin-top: 10px;
-}
-
-.page3 .buttontypeA a {
-  text-decoration: none;
-  font-family: 'Inter', serif;
-  font-size: 17px;
-  color: white;
-  padding: 15px;
-  background-color: #ff6b00;
 }
 
 .page3 .buttontypeA a:hover {
@@ -194,17 +205,6 @@ header li a:hover {
   text-align: center;
 }
 
-.page2 .buttontypeB a {
-  display: block;
-  background: #ff6b00;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  text-decoration: none;
-  font-family: 'Inter', serif;
-  font-size: 20px;
-  color: white;
-}
-
 .page2 .buttontypeB a:hover {
   background-color: #fff5e1;
   border: 1px solid #ff6b00;
@@ -217,6 +217,16 @@ header li a:hover {
   padding-left: 10px;
   font-size: 40px;
   color: white;
+}
+
+.page3 .text1 {
+  font-family: 'Inter', serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #f4f5f7;
+  padding-right: 24px;
 }
 
 .page2 .site1 .text1 {
@@ -241,16 +251,6 @@ header li a:hover {
   /* line-height: 30px; */
   letter-spacing: 0.37px;
   text-align: center;
-}
-
-.page3 .text1 {
-  font-family: 'Inter', serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 24px;
-  color: #f4f5f7;
-  padding-right: 24px;
 }
 
 @media (max-width: 1000px) {
@@ -416,14 +416,14 @@ header li a:hover {
   }
 
   .page3 .container .languages .header i {
-    transform: rotate(45deg); 
-    color: #FF6B00;
-  }
-  .page3 .container .frameworks .header i,
-  .page3 .container .skills .header i {
-    color: #FF6B00;
+    transform: rotate(45deg);
+    color: #ff6b00;
   }
 
+  .page3 .container .frameworks .header i,
+  .page3 .container .skills .header i {
+    color: #ff6b00;
+  }
 
   .page3 .container .languages ul,
   .page3 .container .frameworks ul,
