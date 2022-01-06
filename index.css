@@ -1,7 +1,6 @@
 body {
   margin: 0;
   padding: 0;
-  
 }
 
 .page1 {
@@ -11,7 +10,7 @@ body {
 
 .page2 {
   min-height: 100vh;
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
 }
 
 header .mobile {
@@ -140,120 +139,118 @@ header li a:hover {
 }
 
 .page2 .title {
-    font-family: 'Crete Round', serif;
-    
-  }
+  font-family: 'Crete Round', serif;
+}
 
 .page2 .buttontypeA {
-margin-top: 10px;
+  margin-top: 10px;
 }
 
 .page2 .buttontypeA a {
-text-decoration: none;
-font-family: 'Inter', serif;
-font-size: 17px;
-color: white;
-padding: 15px;
-background-color: #FF6B00;
+  text-decoration: none;
+  font-family: 'Inter', serif;
+  font-size: 17px;
+  color: white;
+  padding: 15px;
+  background-color: #ff6b00;
 }
 
 .page2 .buttontypeA a:hover {
-background-color: #FFF5E1;
-border: 1px solid #FF6B00;
-color: #FF6B00;
+  background-color: #fff5e1;
+  border: 1px solid #ff6b00;
+  color: #ff6b00;
 }
 
 .page3 .buttontypeA {
-margin-top: 10px;
+  margin-top: 10px;
 }
 
 .page3 .buttontypeA a {
-text-decoration: none;
-font-family: 'Inter', serif;
-font-size: 17px;
-color: white;
-padding: 15px;
-background-color: #FF6B00;
+  text-decoration: none;
+  font-family: 'Inter', serif;
+  font-size: 17px;
+  color: white;
+  padding: 15px;
+  background-color: #ff6b00;
 }
 
 .page3 .buttontypeA a:hover {
-background-color: #FFF5E1;
-border: 1px solid #FF6B00;
-color: #FF6B00;
+  background-color: #fff5e1;
+  border: 1px solid #ff6b00;
+  color: #ff6b00;
 }
 
 .page2 .site1 {
-    height: 350px;
-    background-image: url(images/offenbach1.png);
+  height: 350px;
+  background-image: url(images/offenbach1.png);
 }
 
 .page2 .site2 {
-    background-image: url(images/spoiledeggs1.png);
+  background-image: url(images/spoiledeggs1.png);
 }
 
 .page2 .buttontypeB {
-
-margin-top: 10px;
-text-align: center;
+  margin-top: 10px;
+  text-align: center;
 }
 
 .page2 .buttontypeB a {
-    display: block;
-    background: #FF6B00;
-    padding-top: 15px;   
-    padding-bottom: 15px;
-text-decoration: none;
-font-family: 'Inter', serif;
-font-size: 20px;
-color: white;
-
+  display: block;
+  background: #ff6b00;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-decoration: none;
+  font-family: 'Inter', serif;
+  font-size: 20px;
+  color: white;
 }
 
 .page2 .buttontypeB a:hover {
-background-color: #FFF5E1;
-border: 1px solid #FF6B00;
-color: #FF6B00;
+  background-color: #fff5e1;
+  border: 1px solid #ff6b00;
+  color: #ff6b00;
 }
 
 .page2 .title3 {
-    text-align: left;
-    padding-top: 90px;
-    padding-left: 10px;
-    font-size: 40px;
-    color: white;
+  text-align: left;
+  padding-top: 90px;
+  padding-left: 10px;
+  font-size: 40px;
+  color: white;
 }
 
 .page2 .site1 .text1 {
-    padding: 5px;
-    color: white;
+  padding: 5px;
+  color: white;
 }
 
 .page2 .site1 ul li {
-    background: grey;
-    opacity: 0.8;
-    border: none;
-    color: white;
-    padding: 12px 20px;
-    margin: 2px;
+  background: grey;
+  opacity: 0.8;
+  border: none;
+  color: white;
+  padding: 12px 20px;
+  margin: 2px;
 }
 
 .page3 .title1 {
-    font-family: 'Crete Round', serif;
-    color:#FF6B00;
-    font-size: 72px;
-    /* line-height: 30px; */
-    letter-spacing: 0.37px;
-    text-align: center;
+  font-family: 'Crete Round', serif;
+  color: #ff6b00;
+  font-size: 72px;
+
+  /* line-height: 30px; */
+  letter-spacing: 0.37px;
+  text-align: center;
 }
 
 .page3 .text1 {
-    font-family: 'Inter',serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
-    color: #F4F5F7;
-    padding-right: 24px;
+  font-family: 'Inter', serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #f4f5f7;
+  padding-right: 24px;
 }
 
 @media (max-width: 1000px) {
@@ -348,46 +345,44 @@ color: #FF6B00;
   }
 
   .page2 .container {
-      display: grid;
-      grid-template-rows: auto auto auto auto auto;
-      grid-template-columns: auto;
-      grid-gap: 24px;
-      background-color: #ffffff;
-      padding: 24px;
-      
+    display: grid;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-columns: auto;
+    grid-gap: 24px;
+    background-color: #fff;
+    padding: 24px;
   }
 
   .page2 .title1 {
-      background-color: #ffffff;
-      text-align: center;
-      padding-top: 50px;
-      font-size: 40px;
+    background-color: #fff;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 40px;
   }
-  
+
   .page2 .title2 {
-      background-color: #ffffff;
-      text-align: left;
-      padding-top: 50px;
-      font-size: 40px;
+    background-color: #fff;
+    text-align: left;
+    padding-top: 50px;
+    font-size: 40px;
   }
 
   .page2 img {
-      width:100%;      
-      object-fit: fill;
+    width: 100%;
+    object-fit: fill;
   }
 
   .page2 ul {
-      list-style: none;
-      padding: 0;
-      display: flex;
-      flex-wrap: wrap;
-      
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .page2 ul li {
-      border: 1px solid black;
-      padding: 12px 20px;
-      margin: 2px;
+    border: 1px solid black;
+    padding: 12px 20px;
+    margin: 2px;
   }
 
   .page3 .container {
@@ -396,54 +391,55 @@ color: #FF6B00;
     grid-template-rows: 100px 80px 120px 20px 200px;
     grid-template-columns: auto;
     grid-gap: 14px;
-    background: #1C1A19;
+    background: #1c1a19;
     padding-left: 24px;
-    
   }
 
   .page3 .container .graphic img {
-    float:right;
+    float: right;
   }
-  
+
   .page3 .container .hr {
-      padding-right: 24px;
+    padding-right: 24px;
   }
 
   .page3 .container .languages .header,
   .page3 .container .frameworks .header,
   .page3 .container .skills .header {
-      text-align: center;
-      font-family: 'InaiMathi',serif;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 32px;
-        line-height: 44px;
-        color: #FFFFFF;
+    text-align: center;
+    font-family: 'InaiMathi', serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 44px;
+    color: #fff;
   }
 
   .page3 .container .languages ul,
   .page3 .container .frameworks ul,
   .page3 .container .skills ul {
-    list-style: none;  
+    list-style: none;
     text-align: center;
   }
-  .page3 .container .languages,.frameworks,.skills ul li {
-      color: white;
+
+  .page3 .container .languages,
+  .frameworks,
+  .skills ul li {
+    color: white;
     list-style: none;
-    font-family: 'Inter',serif;
+    font-family: 'Inter', serif;
     font-style: normal;
     font-weight: normal;
     font-size: 22px;
-    line-height: 43px; 
+    line-height: 43px;
   }
 }
-
 
 @media (max-width: 416px) {
   .asidemobile ul li {
     list-style: none;
-    height: 100px;    
-    margin:80px 20px;
+    height: 100px;
+    margin: 80px 20px;
   }
 }
 
