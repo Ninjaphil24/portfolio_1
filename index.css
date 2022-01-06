@@ -163,6 +163,25 @@ border: 1px solid #FF6B00;
 color: #FF6B00;
 }
 
+.page3 .buttontypeA {
+margin-top: 10px;
+}
+
+.page3 .buttontypeA a {
+text-decoration: none;
+font-family: 'Inter', serif;
+font-size: 17px;
+color: white;
+padding: 15px;
+background-color: #FF6B00;
+}
+
+.page3 .buttontypeA a:hover {
+background-color: #FFF5E1;
+border: 1px solid #FF6B00;
+color: #FF6B00;
+}
+
 .page2 .site1 {
     height: 350px;
     background-image: url(images/offenbach1.png);
@@ -216,6 +235,24 @@ color: #FF6B00;
     color: white;
     padding: 12px 20px;
     margin: 2px;
+}
+
+.page3 .title1 {
+    font-family: 'Crete Round', serif;
+    color:#FF6B00;
+    font-size: 72px;
+    /* line-height: 30px; */
+    letter-spacing: 0.37px;
+    text-align: center;
+}
+
+.page3 .text1 {
+    font-family: 'Inter',serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #F4F5F7;
 }
 
 @media (max-width: 1000px) {
@@ -352,14 +389,24 @@ color: #FF6B00;
       margin: 2px;
   }
 
+  .page3 .container {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 100px 80px 120px auto auto;
+    grid-template-columns: auto;
+    grid-gap: 14px;
+    background: #1C1A19;
+    padding: 24px;
+    
+}
+
 }
 
 
 @media (max-width: 416px) {
   .asidemobile ul li {
     list-style: none;
-    height: 100px;
-    
+    height: 100px;    
     margin:80px 20px;
   }
 }
