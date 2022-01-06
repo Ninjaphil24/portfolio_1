@@ -27,7 +27,7 @@ header {
   align-items: baseline;
 }
 
-header a {
+header h1 {
   margin: 3%;
   font-size: 30px;
   text-decoration: none;
@@ -247,8 +247,7 @@ header li a:hover {
   font-family: 'Crete Round', serif;
   color: #ff6b00;
   font-size: 72px;
-
-  /* line-height: 30px; */
+  margin-top: 0;
   letter-spacing: 0.37px;
   text-align: center;
 }
@@ -284,6 +283,13 @@ header li a:hover {
     font-size: 40px;
     line-height: 33px;
     color: #f55800;
+  }
+
+  .page2 h3 {
+    background-color: #fff;
+    text-align: left;
+    padding-top: 50px;
+    font-size: 30px;
   }
 
   .home .text h3 {
@@ -346,25 +352,18 @@ header li a:hover {
 
   .page2 .container {
     display: grid;
-    grid-template-rows: auto auto auto auto auto;
+    grid-template-rows: repeat(5, auto);
     grid-template-columns: auto;
     grid-gap: 24px;
     background-color: #fff;
     padding: 24px;
   }
 
-  .page2 .title1 {
+  .page2 .title1 h3 {
     background-color: #fff;
     text-align: center;
     padding-top: 50px;
-    font-size: 40px;
-  }
-
-  .page2 .title2 {
-    background-color: #fff;
-    text-align: left;
-    padding-top: 50px;
-    font-size: 40px;
+    font-size: 35px;
   }
 
   .page2 img {
@@ -388,7 +387,7 @@ header li a:hover {
   .page3 .container {
     min-height: 100vh;
     display: grid;
-    grid-template-rows: 100px 80px 120px 20px 200px;
+    grid-template-rows: 100px 80px 150px 20px 200px;
     grid-template-columns: auto;
     grid-gap: 14px;
     background: #1c1a19;
@@ -403,9 +402,13 @@ header li a:hover {
     padding-right: 24px;
   }
 
-  .page3 .container .languages .header,
-  .page3 .container .frameworks .header,
-  .page3 .container .skills .header {
+  .page3 .container .nested {
+    padding: 0;
+    list-style-type: none;
+    padding-right: 24px;
+  }
+
+  .page3 .container .nested .header {
     text-align: center;
     font-family: 'InaiMathi', serif;
     font-style: normal;
@@ -415,26 +418,21 @@ header li a:hover {
     color: #fff;
   }
 
-  .page3 .container .languages .header i {
+  .page3 .container .header i {
+    color: #ff6b00;
+  }
+
+  .page3 .container .nested .rhombus i {
     transform: rotate(45deg);
     color: #ff6b00;
   }
 
-  .page3 .container .frameworks .header i,
-  .page3 .container .skills .header i {
-    color: #ff6b00;
-  }
-
-  .page3 .container .languages ul,
-  .page3 .container .frameworks ul,
-  .page3 .container .skills ul {
+  .page3 .container .nested .list {
     list-style: none;
     text-align: center;
   }
 
-  .page3 .container .languages,
-  .frameworks,
-  .skills ul li {
+  .page3 .container .nested .list li {
     color: white;
     list-style: none;
     font-family: 'Inter', serif;
@@ -442,6 +440,12 @@ header li a:hover {
     font-weight: normal;
     font-size: 22px;
     line-height: 43px;
+  }
+}
+
+@media (max-width: 459px) {
+  .page2 .site1 {
+    height: 400px;
   }
 }
 
@@ -529,5 +533,17 @@ header li a:hover {
 
   .asidemobile ul li i {
     color: #cfcfcf;
+  }
+}
+
+@media (max-width: 367px) {
+  .page2 .site1 {
+    height: 420px;
+  }
+}
+
+@media (max-width: 350px) {
+  .page2 .site1 {
+    height: 475px;
   }
 }

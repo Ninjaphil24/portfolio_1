@@ -9,9 +9,9 @@
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 <body>
-<div class="page1">
+<section class="page1">
     <header>
-    <a href="index.html">Philip Modinos</a>
+    <h1>Philip Modinos</h1>
     <nav class="desktop">
         <ul>
             <li><a href="portfolio.html">Portfolio</a></li>
@@ -52,12 +52,12 @@
         </ul>
     </aside>   
     
-</div> <!--page 1 end -->
+</section> <!--page 1 end -->
 
-<div class="page2">
+<section class="page2">
     <div class="container">
         <div class="items title1">
-            My Recent Works        
+           <h3>My Recent Works</h3>
         <br> <br>
         <hr>
         </div>
@@ -65,8 +65,8 @@
             <img src="images/testimg.png" alt="">
         </div>
         <div class="items description1">
-            <div class="title2">Multi-Post Stories</div>
-            <div class="text1">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</div>
+            <h3 class="title2">Multi-Post Stories</h3>
+            <p class="text1">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
         </div>
         <ul class="items lang">
             <li>html</li>
@@ -82,7 +82,7 @@
         <div class="items site1">
             <div class="description2">
                 <div class="title3">Multi-Post Stories</div>
-                <div class="text1">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</div>
+                <p class="text1">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
             </div>
             <ul class="items lang">
                 <li>html</li>
@@ -94,13 +94,13 @@
             </ul>
             <div class="items buttontypeB">
                 <a href="#">See Project</a>
-                </div>
+            </div>
         </div><!--site1 end-->
         <br> <br> <br>
         <div class="items site1 site2">
             <div class="description2">
                 <div class="title3">Multi-Post Stories</div>
-                <div class="text1">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</div>
+                <p class="text1">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
             </div>
             <ul class="items lang">
                 <li>html</li>
@@ -116,14 +116,14 @@
         </div><!--site2 end-->
         
     </div><!--container end-->
-</div><!--page2 end-->
+</section><!--page2 end-->
 <br> <br> <br>
-<div class="page3">
+<section class="page3">
     <div class="container">
         <br> <br> 
-        <div class="items title1">About me</div>
-        <div class="items text1">Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
-        </div>
+        <h3 class="items title1">About me</h3>
+        <p class="items text1">Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
+        </p>
         <div class="items buttontypeA">
             <a href="#">Get My Resume</a>
         </div>
@@ -133,9 +133,10 @@
         <div class="items hr">
             <hr>
         </div>
-        <div class="items languages">
-            <div class="header"><i class="fa fa-square" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Language</div>
-            <ul>
+
+        <ul class = "nested">
+            <li class = "header rhombus"><i class="fa fa-square" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Languages</li>
+            <li><ul class="list">
                 <li>Html</li>
                 <li>Css</li>
                 <li>Php</li>
@@ -143,25 +144,22 @@
                 <li>Javascript</li>
                 <li>Python</li>
                 <li>Java</li>
-            </ul>
-        </div>
-        <div class="items frameworks">
-            <div class="header"><i class="fa fa-square" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Frameworks</div>
-            <ul>
+                <li> <br> </li>
+            </ul></li> 
+            <li class = "header"><i class="fa fa-square" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Frameworks</li>
+            <li><ul class="list">
                 <li>Bootstrap</li>
                 <li>PhpMyAdmin</li>
                 <li>Selenium</li>
-            </ul>
-        </div>
-        <div class="items skills">
-            <div class="header"><i class="fa fa-circle" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Skills</div>
-            <ul>
+                <li> <br> </li>
+            </ul></li> 
+            <li class = "header"><i class="fa fa-circle" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Skills</li>
+            <li><ul class="list">
                 <li>Github</li>
                 <li>Terminal</li>
-            </ul>
-        </div>
-        <br>
+            </ul></li>
+        </ul>
     </div>
-</div>
+</section>
 </body>
 </html>
