@@ -253,6 +253,7 @@ color: #FF6B00;
     font-size: 16px;
     line-height: 24px;
     color: #F4F5F7;
+    padding-right: 24px;
 }
 
 @media (max-width: 1000px) {
@@ -392,14 +393,49 @@ color: #FF6B00;
   .page3 .container {
     min-height: 100vh;
     display: grid;
-    grid-template-rows: 100px 80px 120px auto auto;
+    grid-template-rows: 100px 80px 120px 20px 200px;
     grid-template-columns: auto;
     grid-gap: 14px;
     background: #1C1A19;
-    padding: 24px;
+    padding-left: 24px;
     
-}
+  }
 
+  .page3 .container .graphic img {
+    float:right;
+  }
+  
+  .page3 .container .hr {
+      padding-right: 24px;
+  }
+
+  .page3 .container .languages .header,
+  .page3 .container .frameworks .header,
+  .page3 .container .skills .header {
+      text-align: center;
+      font-family: 'InaiMathi',serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 44px;
+        color: #FFFFFF;
+  }
+
+  .page3 .container .languages ul,
+  .page3 .container .frameworks ul,
+  .page3 .container .skills ul {
+    list-style: none;  
+    text-align: center;
+  }
+  .page3 .container .languages,.frameworks,.skills ul li {
+      color: white;
+    list-style: none;
+    font-family: 'Inter',serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 43px; 
+  }
 }
 
 
