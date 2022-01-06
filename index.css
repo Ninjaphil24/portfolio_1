@@ -163,9 +163,12 @@ border: 1px solid #FF6B00;
 color: #FF6B00;
 }
 
-.site1 {
+.page2 .site1 {
     height: 350px;
-    background: rgb(22, 164, 230);;
+    background-image: url(images/offenbach.png);
+
+    /* linear-gradient(white,rgb(0, 0, 0)); */
+    
 }
 
 .page2 .buttontypeB {
@@ -194,7 +197,8 @@ color: #FF6B00;
 
 .page2 .title3 {
     text-align: left;
-    padding: 5px 10px;
+    padding-top: 90px;
+    padding-left: 10px;
     font-size: 40px;
     color: white;
 }
