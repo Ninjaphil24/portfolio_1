@@ -8,6 +8,11 @@ body {
   background-color: #1c1a19;
 }
 
+.page2 {
+  min-height: 100vh;
+  background-color: #e5e5e5;
+}
+
 header .mobile {
   display: none;
 }
@@ -22,11 +27,12 @@ header {
   align-items: baseline;
 }
 
-header a {
-  margin: 3%;
+header h1 {
+  margin: 7%;
   font-size: 30px;
   text-decoration: none;
   color: #fff;
+  white-space: nowrap;
 }
 
 header ul {
@@ -133,6 +139,120 @@ header li a:hover {
   height: auto;
 }
 
+.page2 .title {
+  font-family: 'Crete Round', serif;
+}
+
+.page2 .buttontypeA {
+  margin-top: 10px;
+}
+
+.page2 .buttontypeA a {
+  text-decoration: none;
+  font-family: 'Inter', serif;
+  font-size: 17px;
+  color: white;
+  padding: 15px;
+  background-color: #ff6b00;
+}
+
+.page3 .buttontypeA a {
+  text-decoration: none;
+  font-family: 'Inter', serif;
+  font-size: 17px;
+  color: white;
+  padding: 15px;
+  background-color: #ff6b00;
+}
+
+.page2 .buttontypeB a {
+  display: block;
+  background: #ff6b00;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-decoration: none;
+  font-family: 'Inter', serif;
+  font-size: 20px;
+  color: white;
+}
+
+.page2 .buttontypeA a:hover {
+  background-color: #fff5e1;
+  border: 1px solid #ff6b00;
+  color: #ff6b00;
+}
+
+.page3 .buttontypeA {
+  margin-top: 10px;
+}
+
+.page3 .buttontypeA a:hover {
+  background-color: #fff5e1;
+  border: 1px solid #ff6b00;
+  color: #ff6b00;
+}
+
+.page2 .site1 {
+  height: 350px;
+  background-image: url(images/offenbach1.png);
+}
+
+.page2 .site2 {
+  background-image: url(images/spoiledeggs1.png);
+}
+
+.page2 .buttontypeB {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.page2 .buttontypeB a:hover {
+  background-color: #fff5e1;
+  border: 1px solid #ff6b00;
+  color: #ff6b00;
+}
+
+.page2 .title3 {
+  text-align: left;
+  padding-top: 90px;
+  padding-left: 10px;
+  font-size: 40px;
+  color: white;
+}
+
+.page3 .text1 {
+  font-family: 'Inter', serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #f4f5f7;
+  padding-right: 24px;
+}
+
+.page2 .site1 .text1 {
+  padding: 5px;
+  color: white;
+}
+
+.page2 .site1 ul li {
+  background: grey;
+  opacity: 0.8;
+  border: none;
+  color: white;
+  padding: 12px 20px;
+  margin: 2px;
+}
+
+.page3 .title1 {
+  font-family: 'Crete Round', serif;
+  color: #ff6b00;
+  font-size: 72px;
+  margin-top: 0;
+  letter-spacing: 0.37px;
+  text-align: center;
+}
+
 @media (max-width: 1000px) {
   header .desktop {
     display: none;
@@ -148,8 +268,8 @@ header li a:hover {
     position: relative;
     display: flex;
     top: 15vh;
-    width: 98%;
-    left: 2%;
+    width: 95%;
+    left: 5%;
     margin-bottom: 10%;
   }
 
@@ -160,10 +280,16 @@ header li a:hover {
   .home .text h2 {
     font-family: 'Crete Round', serif;
     font-style: normal;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 40px;
-    line-height: 81px;
+    line-height: 45px;
     color: #f55800;
+  }
+
+  .page2 h3 {
+    background-color: #fff;
+    text-align: left;
+    font-size: 25px;
   }
 
   .home .text h3 {
@@ -172,7 +298,7 @@ header li a:hover {
     font-style: normal;
     font-weight: 500;
     font-size: 32px;
-    line-height: 44px;
+    line-height: 28px;
   }
 
   .home .text p {
@@ -223,9 +349,125 @@ header li a:hover {
   .asidemobile ul li i {
     color: #cfcfcf;
   }
+
+  .page2 .container {
+    display: grid;
+    grid-template-rows: repeat(5, auto);
+    grid-template-columns: auto;
+    grid-gap: 24px;
+    background-color: #fff;
+    padding: 24px;
+  }
+
+  .page2 .title1 h3 {
+    background-color: #fff;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 35px;
+  }
+
+  .page2 img {
+    width: 100%;
+    object-fit: fill;
+  }
+
+  .page2 ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .page2 ul li {
+    border: 1px solid black;
+    padding: 12px 20px;
+    margin: 2px;
+  }
+
+  .page3 .container {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 100px 80px 170px 20px 200px;
+    grid-template-columns: auto;
+    grid-gap: 14px;
+    background: #1c1a19;
+    padding-left: 24px;
+  }
+
+  .page3 .container .graphic img {
+    float: right;
+  }
+
+  .page3 .container .hr {
+    padding-right: 24px;
+  }
+
+  .page3 .container .nested {
+    padding: 0;
+    list-style-type: none;
+    padding-right: 24px;
+  }
+
+  .page3 .container .nested .header {
+    text-align: center;
+    font-family: 'InaiMathi', serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 44px;
+    color: #fff;
+  }
+
+  .page3 .container .header i {
+    color: #ff6b00;
+  }
+
+  .page3 .container .nested .rhombus i {
+    transform: rotate(45deg);
+    color: #ff6b00;
+  }
+
+  .page3 .container .nested .list {
+    list-style: none;
+    text-align: center;
+  }
+
+  .page3 .container .nested .list li {
+    color: white;
+    list-style: none;
+    font-family: 'Inter', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 43px;
+  }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 459px) {
+  .page2 .site1 {
+    height: 400px;
+  }
+}
+
+@media (max-width: 416px) {
+  .asidemobile ul li {
+    list-style: none;
+    height: 100px;
+    margin: 80px 20px;
+  }
+}
+
+@media (max-width: 367px) {
+  .page2 .site1 {
+    height: 420px;
+  }
+
+  .page3 .title1 {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 350px) {
   .home .image img {
     display: none;
   }
@@ -244,16 +486,16 @@ header li a:hover {
     position: relative;
     display: flex;
     top: 15vh;
-    width: 98%;
-    left: 2%;
+    width: 95%;
+    left: 5%;
     margin-bottom: 30%;
   }
 
   .home .text h2 {
     font-family: 'Crete Round', serif;
     font-style: normal;
-    font-weight: normal;
-    font-size: 30px;
+    font-weight: bold;
+    font-size: 40px;
     line-height: 41px;
     color: #f55800;
   }
@@ -301,5 +543,9 @@ header li a:hover {
 
   .asidemobile ul li i {
     color: #cfcfcf;
+  }
+
+  .page2 .site1 {
+    height: 475px;
   }
 }
