@@ -457,6 +457,16 @@ header li a:hover {
   }
 }
 
+@media (max-width: 367px) {
+  .page2 .site1 {
+    height: 420px;
+  }
+
+  .page3 .title1 {
+    font-size: 50px;
+  }
+}
+
 @media (max-width: 350px) {
   .home .image img {
     display: none;
@@ -534,15 +544,7 @@ header li a:hover {
   .asidemobile ul li i {
     color: #cfcfcf;
   }
-}
 
-@media (max-width: 367px) {
-  .page2 .site1 {
-    height: 420px;
-  }
-}
-
-@media (max-width: 350px) {
   .page2 .site1 {
     height: 475px;
   }
