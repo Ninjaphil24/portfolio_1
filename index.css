@@ -28,10 +28,11 @@ header {
 }
 
 header h1 {
-  margin: 3%;
+  margin: 7%;
   font-size: 30px;
   text-decoration: none;
   color: #fff;
+  white-space: nowrap;
 }
 
 header ul {
@@ -267,8 +268,8 @@ header li a:hover {
     position: relative;
     display: flex;
     top: 15vh;
-    width: 98%;
-    left: 2%;
+    width: 95%;
+    left: 5%;
     margin-bottom: 10%;
   }
 
@@ -279,17 +280,16 @@ header li a:hover {
   .home .text h2 {
     font-family: 'Crete Round', serif;
     font-style: normal;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 40px;
-    line-height: 33px;
+    line-height: 45px;
     color: #f55800;
   }
 
   .page2 h3 {
     background-color: #fff;
     text-align: left;
-    padding-top: 50px;
-    font-size: 30px;
+    font-size: 25px;
   }
 
   .home .text h3 {
@@ -387,7 +387,7 @@ header li a:hover {
   .page3 .container {
     min-height: 100vh;
     display: grid;
-    grid-template-rows: 100px 80px 150px 20px 200px;
+    grid-template-rows: 100px 80px 170px 20px 200px;
     grid-template-columns: auto;
     grid-gap: 14px;
     background: #1c1a19;
@@ -476,16 +476,16 @@ header li a:hover {
     position: relative;
     display: flex;
     top: 15vh;
-    width: 98%;
-    left: 2%;
+    width: 95%;
+    left: 5%;
     margin-bottom: 30%;
   }
 
   .home .text h2 {
     font-family: 'Crete Round', serif;
     font-style: normal;
-    font-weight: normal;
-    font-size: 30px;
+    font-weight: bold;
+    font-size: 40px;
     line-height: 41px;
     color: #f55800;
   }
