@@ -303,21 +303,22 @@ header li a:hover {
 .page4 form ul li input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #979493;
   opacity: 1; /* Firefox */
+
 }
 
-.page4 form ul li textarea {
-  border: none;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  height: 150px;
-  background: #fbf8f7;
-}
 
-.page4 form ul li textarea::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #3c3a39;
-  opacity: 1; /* Firefox */
-  font-family: sans-serif;
-}
+  .page4 form ul li textarea {
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    height: 150px;
+    background: #fbf8f7;
+  }
+  .page4 form ul li textarea::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #3C3A39;
+    opacity: 1; /* Firefox */
+    font-family: sans-serif;
+    }
 
 .page4 .mediacontainer {
   bottom: 0;
@@ -333,7 +334,6 @@ header li a:hover {
 .page4 .mediacontainer ul li {
   margin: 5%;
 }
-
 .page4 .mediacontainer ul li i {
   margin: 10px;
   color: #505f79;
@@ -342,7 +342,7 @@ header li a:hover {
 .page4 form {
   display: flex;
   flex-direction: column;
-  align-content: space-evenly;
+  align-content:space-evenly;
 }
 
 .page4 form #getintouch {
@@ -428,11 +428,7 @@ header li a:hover {
     justify-content: flex-end;
   }
 
-  #Vector {
-    object-fit: contain;
-    width: 100%;
-    height: auto;
-  }
+  
 
   .asidedesktop {
     display: none;
