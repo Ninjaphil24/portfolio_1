@@ -394,8 +394,17 @@ header li a:hover {
     display: none;
   }
 
-  header {
-  height: 100px; 
+  .page1 {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 1fr 4fr 3fr;
+    grid-gap: 8px;
+    height: 100vh;
+    
+  }
+
+  header h1 {
+    font-size: x-large;
   }
 
   header .mobile {
@@ -405,39 +414,32 @@ header li a:hover {
   }
 
   .home {
-    position: relative;
-    display: flex;
-    top: 15vh;
-    width: 95%;
-    left: 5%;
-    margin-bottom: 10%;
+    grid-column: 1 / 2;
+    grid-row: 2;  
   }
 
   .home .text {
-    flex: 2;
+    padding-left: 5%;
+    
   }
 
   .home .text h2 {
     font-family: 'Crete Round', serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 40px;
-    line-height: 45px;
+    font-size: 30px;
+    line-height: 35px;
     color: #f55800;
   }
 
-  .page2 h3 {
-    background-color: #fff;
-    text-align: left;
-    font-size: 25px;
-  }
+  
 
   .home .text h3 {
     color: #fff;
     font-family: 'Inter', serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 32px;
+    font-size: 22px;
     line-height: 28px;
   }
 
@@ -446,8 +448,8 @@ header li a:hover {
     font-family: 'Inter', serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 20px;
-    line-height: 32px;
+    font-size: 16px;
+    line-height: 22px;
   }
 
   .home .image {
@@ -464,26 +466,34 @@ header li a:hover {
   }
 
   .asidemobile {
-    display: block;
-    position: relative;
-    flex-wrap: nowrap;
+    grid-column: 1;
+    grid-row: 3;
+    display: flex;
+    justify-content:flex-start;
+
+    
   }
 
   .asidemobile ul {
+    padding: 0;
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
+    justify-content: flex-start;
   }
 
   .asidemobile ul li {
     list-style: none;
-    height: 100px;
-    margin: 50px;
+    padding: 20px;
+    
   }
 
   .asidemobile ul li i {
     color: #cfcfcf;
+  }
+
+  .page2 h3 {
+    background-color: #fff;
+    text-align: left;
+    font-size: 25px;
   }
 
   .page2 .container {
@@ -578,7 +588,7 @@ header li a:hover {
     line-height: 43px;
   }
 }
-
+/*
 @media (max-width: 459px) {
   .page2 .site1 {
     height: 400px;
@@ -684,4 +694,4 @@ header li a:hover {
   .page2 .site1 {
     height: 475px;
   }
-}
+} */
