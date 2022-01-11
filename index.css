@@ -261,6 +261,7 @@ header li a:hover {
 
 .page4 {
   height: 100vh;
+  font-family: 'Inter', serif;
   display: grid;
   grid-template-rows: 8fr 1fr;
 }
@@ -296,14 +297,28 @@ header li a:hover {
 
 .page4 form ul li input {
   border: none;
+  height: 37px;
 }
 
-.page4 form ul li textarea {
-  border: none;
-  margin-top: 10px;
-  height: 90px;
-  background: #fbf8f7;
+.page4 form ul li input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #979493;
+  opacity: 1; /* Firefox */
+
 }
+
+
+  .page4 form ul li textarea {
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    height: 150px;
+    background: #fbf8f7;
+  }
+  .page4 form ul li textarea::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #3C3A39;
+    opacity: 1; /* Firefox */
+    font-family: sans-serif;
+    }
 
 .page4 .mediacontainer {
   bottom: 0;
@@ -316,16 +331,23 @@ header li a:hover {
   padding: 0;
 }
 
+.page4 .mediacontainer ul li {
+  margin: 5%;
+}
 .page4 .mediacontainer ul li i {
   margin: 10px;
   color: #505f79;
 }
 
 .page4 form {
-  
+  display: flex;
+  flex-direction: column;
+  align-content:space-evenly;
 }
 
 .page4 form #getintouch {
+  border: none;
+  align-self: center;
   text-decoration: none;
   width: 120px;
   font-family: 'Inter', serif;
