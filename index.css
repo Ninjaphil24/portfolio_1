@@ -27,6 +27,10 @@ header {
   align-items: baseline;
 }
 
+header a {
+  text-decoration: none;
+}
+
 header h1 {
   margin: 7%;
   font-size: 30px;
@@ -253,6 +257,77 @@ header li a:hover {
   text-align: center;
 }
 
+.page4 {
+  min-height: 100vh;
+}
+
+.page4 .titleForm {   
+  display: grid;
+  grid-template-rows: 60% 40%;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-bottom:10px;
+}
+
+.page4 h3 {
+  font-family: 'Inter', serif;
+  text-align: center;
+  font-size: 30px;  
+}
+
+.page4 form {}
+
+.page4 form ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+}
+
+.page4 form ul li {
+  font-family: 'Inter', serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;  
+}
+
+.page4 form ul li textarea{
+  margin-top: 10px;
+  height: 90px;
+}
+
+.page4 .mediacontainer {
+  bottom: 0;
+}
+
+.page4 .mediacontainer ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  padding: 0;
+  
+}
+
+.page4 .mediacontainer ul li i{
+  margin: 10px;
+  color: #cfcfcf;
+}
+.page4 form #getintouch {
+  text-decoration: none;
+  font-family: 'Inter', serif;
+  font-size: 17px;
+  color: white;
+  padding: 15px;
+  background-color: #ff6b00;
+}
+
+.page4 form #getintouch:hover {
+  cursor: pointer;
+  background-color: #fff5e1;
+  border: 1px solid #ff6b00;
+  color: #ff6b00;
+}
 @media (max-width: 1000px) {
   header .desktop {
     display: none;
