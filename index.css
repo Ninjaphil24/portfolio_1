@@ -264,10 +264,14 @@ header li a:hover {
     display: none;
   }
 
+  header {
+  height: 100px; 
+  }
+
   header .mobile {
     display: flex;
     color: #fff;
-    margin: 10%;
+    margin: 40px;
   }
 
   .home {
