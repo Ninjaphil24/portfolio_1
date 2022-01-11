@@ -8,6 +8,9 @@ body {
 .page1 {
   height: 100vh;
   background-color: #1c1a19;
+  background-image: url(images/fullimage1.png);
+  background-repeat: no-repeat;
+  background-position: top right;
 }
 
 .page2 {
@@ -36,7 +39,6 @@ header a {
 header h1 {
   margin: 7%;
   font-size: 30px;
-  text-decoration: none;
   color: #fff;
   white-space: nowrap;
 }
@@ -369,10 +371,14 @@ header li a:hover {
     display: none;
   }
 
+  header {
+  height: 100px; 
+  }
+
   header .mobile {
     display: flex;
     color: #fff;
-    margin: 10%;
+    margin: 40px;
   }
 
   .home {
