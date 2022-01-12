@@ -149,13 +149,64 @@ header li a:hover {
 
 .page2 {
   min-height: 100vh;
-  background-color: #e5e5e5;
+  /* background-color: #e5e5e5; */
+  padding: 0 90px;
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  grid-gap: 10px;
+}
+/* container */
+.page2 .container {
+  border: 1px solid blue;
 }
 
-.page2 .title {
+.page2 .title1 h3 {
+  /* float: left; */
   font-family: 'Crete Round', serif;
+  background-color: #fff;
+  /* text-align: center; */
+  padding-top: 50px;
+  font-size: 35px;
 }
 
+.page2 .title1 h3::after {
+  display: inline-block;
+  content: "";
+  border-top: .1rem solid #212121;;
+  width: 70%;
+  margin: 0 1rem;
+  transform: translateY(-10px);
+}
+
+.page2 .description p {
+  padding: 5px;
+}
+
+/* container end */
+/* container2 */
+.page2 .container2 {
+  border: 1px solid red;
+}
+
+.page2 img {
+  width: 60%;
+  object-fit: fill;
+  float: left;
+  padding-right: 10px;
+}
+
+.page2 ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.page2 ul li {
+  border: 1px solid black;
+  padding: 12px 20px;
+  margin: 2px;
+}
 .page2 .buttontypeA {
   margin-top: 10px;
 }
@@ -206,12 +257,15 @@ header li a:hover {
 }
 
 .page2 .site1 {
-  height: 350px;
-  background-image: url(images/offenbach1.png);
+  background-image: url(images/spoiledeggs.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 500px;
+  max-width:300px;  
 }
 
-.page2 .site2 {
-  background-image: url(images/spoiledeggs1.png);
+.page2 .site .greyout{
+  background-image: linear-gradient(to bottom, rgba(253, 253, 253,0.8), rgb(0, 0, 0));
 }
 
 .page2 .buttontypeB {
@@ -225,7 +279,7 @@ header li a:hover {
   color: #ff6b00;
 }
 
-.page2 .title3 {
+.page2 .title {
   text-align: left;
   padding-top: 90px;
   padding-left: 10px;
@@ -233,7 +287,7 @@ header li a:hover {
   color: white;
 }
 
-.page3 .text1 {
+.page3 .text {
   font-family: 'Inter', serif;
   font-style: normal;
   font-weight: normal;
@@ -243,12 +297,12 @@ header li a:hover {
   padding-right: 24px;
 }
 
-.page2 .site1 .text1 {
+.page2 .site .text {
   padding: 5px;
   color: white;
 }
 
-.page2 .site1 ul li {
+.page2 .site ul li {
   background: grey;
   opacity: 0.8;
   border: none;
@@ -308,6 +362,7 @@ header li a:hover {
 .page4 form ul li input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #979493;
   opacity: 1; /* Firefox */
+  padding: 10px;
 }
 
 .page4 form ul li input:-ms-input-placeholder { /* Internet Explorer 10-11 */
@@ -329,6 +384,7 @@ header li a:hover {
     color: #3C3A39;
     opacity: 1; /* Firefox */
     font-family: sans-serif;
+    padding: 10px;
     }
 
     .page4 form ul li textarea:-ms-input-placeholder { /* Internet Explorer 10-11 */
@@ -512,23 +568,8 @@ header li a:hover {
     font-size: 35px;
   }
 
-  .page2 img {
-    width: 100%;
-    object-fit: fill;
-  }
 
-  .page2 ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .page2 ul li {
-    border: 1px solid black;
-    padding: 12px 20px;
-    margin: 2px;
-  }
+  
 
   .page3 .container {
     min-height: 100vh;

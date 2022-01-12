@@ -37,7 +37,7 @@
         <div class="text">
         <h2>Hey There. <br> I'm Phil</h2>
         <h3>I'm a Software Developer</h3>
-        <p>I can help you build a product , feature or website.  Look through some of my work and experience! If you like what you see and have a project you need coded, 
+        <p>I can help you build a product, feature or website.  Look through some of my work and experience! If you like what you see and have a project you need coded, 
             don’t hesitate to contact me.</p>
         </div>
         
@@ -56,17 +56,17 @@
     <div class="container">
         <div class="items title1">
            <h3>My Recent Works</h3>
-        <br> <br>
-        <hr>
+           <!-- <div><hr></div> -->
+        
         </div>
-        <div class="items img1">
-            <img src="images/testimg.png" alt="">
+        <div class="img1">
+            <img src="images/offenbach.png" alt="">
         </div>
-        <div class="items description1">
-            <h3 class="title2">Multi-Post Stories</h3>
-            <p class="text1">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
+        <div class="description">
+            <h3>The Offenbach Grand Prix</h3>
+            <p>A fully online opera-singing competition, where the audience can comment and applaud, and where the jury comments in full view of the audience.  Automated application process, which includes video and biog upload, as well as an automatically generated contract in the end.</p>
         </div>
-        <ul class="items lang">
+        <ul>
             <li>html</li>
             <li>css</li>
             <li>php</li>
@@ -75,45 +75,32 @@
             
         </ul>
         <div class="items buttontypeA">
-        <a href="#">See Project</a>
+        <a href="https://www.offenbachgp.com/" target="_blank">See Project</a>
         </div>
-        <div class="items site1">
-            <div class="description2">
-                <div class="title3">Multi-Post Stories</div>
-                <p class="text1">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
-            </div>
-            <ul class="items lang">
-                <li>html</li>
-                <li>css</li>
-                <li>php</li>
-                <li>mysql</li>
-                <li>javascript</li>
-                
-            </ul>
-            <div class="items buttontypeB">
-                <a href="#">See Project</a>
-            </div>
-        </div><!--site1 end-->
-        <br> <br> <br>
-        <div class="items site1 site2">
-            <div class="description2">
-                <div class="title3">Multi-Post Stories</div>
-                <p class="text1">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
-            </div>
-            <ul class="items lang">
-                <li>html</li>
-                <li>css</li>
-                <li>php</li>
-                <li>mysql</li>
-                <li>javascript</li>
-                
-            </ul>
-            <div class="items buttontypeB">
-                <a href="#">See Project</a>
-                </div>
-        </div><!--site2 end-->
-        
     </div><!--container end-->
+    <div class="container2">
+        <div class="site site1">
+            <div class="greyout">
+                <div class="description">
+                    <div class="title">Spoiled Eggs</div>
+                    <p class="text">Spoiled Eggs was the original template for 2 projects and those two projects were used to promote Spoiled Eggs.  It's a review site for opera, where people can rage click "applause" or "throwing eggs" and of course comment.</p>
+                </div>
+                <ul class="items lang">
+                    <li>html</li>
+                    <li>css</li>
+                    <li>php</li>
+                    <li>mysql</li>
+                    <li>javascript</li>
+                    
+                </ul>
+                <div class="items buttontypeB">
+                    <a href="#">See Project</a>
+                </div>
+            </div><!--greyout end-->
+        </div><!--site1 end-->
+        
+    </div><!--container2 end-->
+    
 </section><!--page2 end-->
 <br> <br> <br>
 <section class="page3">
@@ -166,18 +153,18 @@
     <form action="/my-handling-form-page" method="post">
         <ul>
          <li>
-           <input type="text" id="name" name="user_name" placeholder="Full name:">
+           <input type="text" id="name" name="user_name" placeholder="Full name:" required maxlength="50">
            <div><hr></div>
          </li>
          <li>           
-           <input type="email" id="mail" name="user_email" placeholder="E-mail address:">
+           <input type="email" id="mail" name="user_email" placeholder="E-mail address:" required maxlength="50">
            <div><hr></div>
          </li>
          <li>
            <textarea id="msg" name="user_message" placeholder="Enter text here"></textarea>
          </li>
         </ul>
-        <input id="getintouch" type="submit" name="submit" value="Get in touch">
+        <input id="getintouch" type="submit" name="submit" value="Get in touch" required maxlength="1000">
        </form>
     </div>
        <div class="mediacontainer">
