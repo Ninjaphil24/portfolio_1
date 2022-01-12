@@ -256,20 +256,51 @@ header li a:hover {
   color: #ff6b00;
 }
 
+.page2 .site {
+  
+  height: 400px;
+}
+
 .page2 .site1 {
+  border: 1px solid orange;
   background-image: url(images/spoiledeggs.png);
   background-repeat: no-repeat;
   background-size: contain;
-  height: 500px;
   max-width:300px;  
 }
 
-.page2 .site .greyout{
+.page2 .site a {
+  text-decoration: none;
+}
+
+.page2 .site a .buttondecor p {
+  display:none;
+}
+.page2 .site a:hover .buttondecor p {
+  position: relative;
+  bottom: 70px;
+  display: block;
+  text-align: center;
+  background: #ff6b00;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-decoration: none;
+  font-family: 'Inter', serif;
+  font-size: 20px;
+  color: white;
+}
+
+.page2 .site .greyout {
+  height: 100%;
   background-image: linear-gradient(to bottom, rgba(253, 253, 253,0.8), rgb(0, 0, 0));
+}
+.page2 .site .greyout:hover{
+  opacity: 0;
 }
 
 .page2 .buttontypeB {
-  margin-top: 10px;
+  position:relative;
+  top: 90%;
   text-align: center;
 }
 
