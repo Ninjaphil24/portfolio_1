@@ -257,16 +257,31 @@ header li a:hover {
 }
 
 .page2 .site {
-  
+  float: left;
   height: 400px;
+  margin: 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width:300px;  
 }
 
 .page2 .site1 {
-  border: 1px solid orange;
   background-image: url(images/spoiledeggs.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  max-width:300px;  
+}
+.page2 .site2 {
+  background-image: url(images/classicatournee.png);
+}
+.page2 .site3 {
+  background-image: url(images/operapathway.png);
+}
+.page2 .site4 {
+  background-image: url(images/singthemastersmob.png);
+}
+.page2 .site5 {
+  background-image: url(images/callasmobile.png);
+}
+.page2 .site6 {
+  background-image: url(images/modinos.png);
 }
 
 .page2 .site a {
