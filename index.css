@@ -451,17 +451,21 @@ header li a:hover {
 }
 
 .page4 .titleForm {
+  border: 1px solid red;
   padding-left: 10%;
   padding-right: 10%;
   margin-bottom: 10px;
 }
 
 .page4 h3 {
+  border: 1px solid blue;
   font-family: 'Inter', serif;
-  text-align: center;
+  /* text-align: center; */
   font-size: 30px;
 }
-
+.page4 form {
+  border: 1px solid blue;
+}
 .page4 form ul {
   display: flex;
   flex-direction: column;
