@@ -149,8 +149,7 @@ header li a:hover {
 
 .page2 {
   min-height: 100vh;
-  /* background-color: #e5e5e5; */
-  padding: 0 90px;
+  padding: 0 141px;
   display: grid;
   grid-template-rows: 2fr 3fr;
   grid-gap: 10px;
@@ -271,7 +270,8 @@ header li a:hover {
 .page2 .site {
   float: left;
   height: 435px;
-  margin: 15px;
+  margin-right: 20px;
+  margin-bottom: 20px;
   background-repeat: no-repeat;
   background-size: cover;
   max-width:336px;  
@@ -485,7 +485,7 @@ header li a:hover {
   grid-column: 1 / 2;
   grid-row: 1;
   font-family: 'Inter', serif;
-  font-size: 30px;
+  font-size: 40px;
 }
 
 
@@ -505,7 +505,6 @@ header li a:hover {
   border: none;
   justify-self: center;
   text-decoration: none;
-  width: 120px;
   font-family: 'Inter', serif;
   font-size: 17px;
   color: white;
