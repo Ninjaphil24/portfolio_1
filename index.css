@@ -369,6 +369,8 @@ header li a:hover {
 .page3 .title {
   font-family: 'Crete Round', serif;
   color: #ff6b00;
+  font-style: normal;
+  font-weight: normal;
   font-size: 72px;
   margin-top: 0;
   letter-spacing: 0.37px;
@@ -691,7 +693,10 @@ header li a:hover {
 
 }
   
-
+.page4 {
+  display: grid;
+  grid-template-rows: 8fr 1fr;
+}
 
 /*
 @media (max-width: 459px) {
