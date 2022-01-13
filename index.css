@@ -333,15 +333,6 @@ header li a:hover {
   color: white;
 }
 
-.page3 .text {
-  font-family: 'Inter', serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 24px;
-  color: #f4f5f7;
-  padding-right: 24px;
-}
 
 .page2 .site .text {
   padding: 5px;
@@ -357,14 +348,98 @@ header li a:hover {
   margin: 2px;
 }
 
-.page3 .title1 {
+.page3 {
+  min-height: 100vh;
+  background-color: #1c1a19;
+  background-image: url(images/group.png);
+  background-repeat: no-repeat;
+  background-position: 100% 10%;
+  background-size: 40%;
+}
+
+
+.page3 .container {
+  display: grid;
+  grid-template-rows: 100px 80px 170px 20px 200px;
+  grid-template-columns: auto;
+  grid-gap: 14px;  
+  padding: 0 84px;
+}
+
+.page3 .title {
   font-family: 'Crete Round', serif;
   color: #ff6b00;
   font-size: 72px;
   margin-top: 0;
   letter-spacing: 0.37px;
-  text-align: center;
 }
+.page3 .text {
+  max-width: 50%;
+  font-family: 'Inter', serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 32px;
+  color: #f4f5f7;
+  padding-right: 24px;
+  
+}
+
+.page3 .buttontypeA {
+  margin: 50px 0;
+}
+
+.page3 .container .hr {
+  margin: 170px 0;
+  padding-right: 24px;
+}
+
+.page3 .container .nested {
+  /* Adding for desktop start */
+  display: flex;
+  justify-content: space-between;
+  /* Adding for desktop end */
+  padding: 0;
+  list-style-type: none;
+  margin: 80px 0;
+}
+
+.page3 .container .nested .header {
+  text-align: center;
+  font-family: 'Inter', serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 44px;
+  color: #fff;
+}
+
+.page3 .container .header i {
+  color: #ff6b00;
+}
+
+.page3 .container .nested .rhombus i {
+  transform: rotate(45deg);
+  color: #ff6b00;
+}
+
+.page3 .container .nested .list {
+  list-style: none;
+  padding:0;
+}
+
+.page3 .container .nested .list li {
+  margin: 10px;
+  color: white;
+  list-style: none;
+  font-family: 'Inter', serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 43px;
+  text-align: left;
+}
+
 
 .page4 {
   height: 100vh;
@@ -614,67 +689,10 @@ header li a:hover {
     font-size: 35px;
   }
 
-
+}
   
 
-  .page3 .container {
-    min-height: 100vh;
-    display: grid;
-    grid-template-rows: 100px 80px 170px 20px 200px;
-    grid-template-columns: auto;
-    grid-gap: 14px;
-    background: #1c1a19;
-    padding-left: 24px;
-  }
 
-  .page3 .container .graphic img {
-    float: right;
-  }
-
-  .page3 .container .hr {
-    padding-right: 24px;
-  }
-
-  .page3 .container .nested {
-    padding: 0;
-    list-style-type: none;
-    padding-right: 24px;
-  }
-
-  .page3 .container .nested .header {
-    text-align: center;
-    font-family: 'InaiMathi', serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 32px;
-    line-height: 44px;
-    color: #fff;
-  }
-
-  .page3 .container .header i {
-    color: #ff6b00;
-  }
-
-  .page3 .container .nested .rhombus i {
-    transform: rotate(45deg);
-    color: #ff6b00;
-  }
-
-  .page3 .container .nested .list {
-    list-style: none;
-    text-align: center;
-  }
-
-  .page3 .container .nested .list li {
-    color: white;
-    list-style: none;
-    font-family: 'Inter', serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 22px;
-    line-height: 43px;
-  }
-}
 /*
 @media (max-width: 459px) {
   .page2 .site1 {
