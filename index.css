@@ -807,7 +807,54 @@ header li a:hover {
   .page2 .site {
     margin: 20px;
   }
+
+  .page3 {
+    background-position: 240% 30%;
+    background-size: 70%;
+  }
+
+  .page3 .container {
+    display: grid;
+    grid-template-rows: 77px 86px 158px 153px 209px;
+    grid-template-columns: 327px;
+    grid-gap: 14px;  
+    padding: 0 24px;
+  }
+
+  .page3 .text {
+    max-width: 100%;
+    font-family: 'Inter', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #f4f5f7;
+    padding-right: 24px;
+    
+  }
+
+  .page3 .container .hr {
+    margin: 170px 0;
+    padding: 0;
+  }
+
   
+  .page3 .container .nested .header {
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  
+.page3 .container .nested .list li {  
+    text-align: center;
+    font-size: 22px;
+    line-height: 43px;
+  }
+
+  .page3 .container .nested {
+    flex-direction: column;
+  }
+
   .page4 {
     display: grid;
     grid-template-rows: 8fr 1fr;
