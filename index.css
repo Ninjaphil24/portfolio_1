@@ -163,7 +163,13 @@ header li a:hover {
   font-family: 'Crete Round', serif;
   background-color: #fff;
   padding-top: 50px;
-  font-size: 35px;
+  font-family: Crete Round;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 52px;
+  display: flex;
+  color: #091E42;
 }
 
 .page2 .title1 h3::after {
@@ -172,7 +178,11 @@ header li a:hover {
   border-top: .1rem solid #212121;;
   width: 70%;
   margin: 0 1rem;
-  transform: translateY(-10px);
+  transform: translateY(20px);
+}
+
+.page2 .title1 .hr {
+  display: none;
 }
 
 .page2 .description h3 {
@@ -181,6 +191,7 @@ header li a:hover {
   font-weight: normal;
   font-size: 40px;
   line-height: 52px;
+  color: #091E42;
 }
 
 .page2 .description p {
@@ -604,7 +615,7 @@ header li a:hover {
 
   .page1 {
     display: grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 5fr 1fr;
     grid-template-rows: 1fr 4fr 3fr;
     grid-gap: 8px;
     height: 100vh;
@@ -634,9 +645,10 @@ header li a:hover {
   .home .text h2 {
     font-family: 'Crete Round', serif;
     font-style: normal;
-    font-weight: bold;
-    font-size: 30px;
-    line-height: 35px;
+    font-weight: normal;
+    font-size: 56px;
+    line-height: 64px;
+    letter-spacing: 0.37px;
     color: #f55800;
   }
 
@@ -697,16 +709,15 @@ header li a:hover {
   .asidemobile ul li i {
     color: #cfcfcf;
   }
-
-  .page2 h3 {
-    background-color: #fff;
-    text-align: left;
-    font-size: 25px;
+  
+  .page2 {
+    min-height: 100vh;
+    padding: 0 0;grid-template-rows: 1fr 2.3fr;
   }
-
+  
   .page2 .container {
     display: grid;
-    grid-template-rows: repeat(5, auto);
+    grid-template-rows: 229px 238px 278px 150px 149px;
     grid-template-columns: auto;
     grid-gap: 24px;
     background-color: #fff;
@@ -714,12 +725,88 @@ header li a:hover {
   }
 
   .page2 .title1 h3 {
+    display: block;
     background-color: #fff;
     text-align: center;
     padding-top: 50px;
     font-size: 35px;
   }
 
+  .page2 .title1 .hr {
+    display: block;
+  }
+
+  .page2 .title1 h3::after {
+    display: none;
+  }
+
+  .page2 img {
+    width: 100%;
+    object-fit: fill;
+    float: left;
+    padding-right: 10px;
+  }
+
+  .page2 .description h3 {
+    font-family: 'Crete Round',serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 44px;
+    color: #091E42;
+  }
+  .page2 .site a .buttondecor p {
+    display:none;
+  }
+  .page2 .site a .buttondecor p {
+    position: relative;
+    bottom: 70px;
+    display: block;
+    text-align: center;
+    background: #ff6b00;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-decoration: none;
+    font-family: 'Inter', serif;
+    font-size: 20px;
+    color: white;
+  }
+
+  .page2 .site .greyout {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  
+    opacity: 1;
+  }
+  .page2 .site1 .title {
+    padding-top: 22px;
+  }
+  .page2 .buttontypeB {
+    position:relative;
+    top: 90%;
+    text-align: center;
+  }
+  
+
+  .page2 ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+  }
+  
+  .page2 ul li {
+    border: 1px solid black;
+    /* padding: 12px 20px; */
+    margin: 2px;
+  }
+  
+  .page2 .site {
+    margin: 20px;
+  }
   
   .page4 {
     display: grid;
