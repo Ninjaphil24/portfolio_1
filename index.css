@@ -48,12 +48,14 @@ header h1 {
 header ul {
   display: flex;
   justify-content: flex-end;
+
   /* border: 1px solid white; */
 }
 
 header li {
+  text-align: center;
   list-style: none;
-  width: 100px;
+  width: 115px;
 }
 
 header li a {
@@ -75,11 +77,10 @@ header li a:hover {
   /* border: 1px solid red; */
   grid-column: 1;
   grid-row: 1 / span 3;
-  
 }
 
 .asidedesktop ul {
-  display: flex;  
+  display: flex;
   padding: 20%;
   justify-content: center;
   flex-direction: column;
@@ -95,6 +96,11 @@ header li a:hover {
   color: #cfcfcf;
 }
 
+.page4 .mediacontainer ul li i {
+  margin: 10px;
+  color: #505f79;
+}
+
 .asidedesktop ul li a:hover i {
   color: rgb(248, 176, 245);
 }
@@ -102,7 +108,7 @@ header li a:hover {
 .home {
   /* border: 1px solid red; */
   grid-column: 2;
-  grid-row: 2 / 3;  
+  grid-row: 2 / 3;
 }
 
 .home .text {
@@ -120,6 +126,13 @@ header li a:hover {
   font-size: 62px;
   line-height: 71px;
   color: #f55800;
+}
+
+.page4 h3 {
+  grid-column: 1 / 2;
+  grid-row: 1;
+  font-family: 'Inter', serif;
+  font-size: 40px;
 }
 
 .home .text h3 {
@@ -154,28 +167,29 @@ header li a:hover {
   grid-template-rows: 2fr 3fr;
   grid-gap: 10px;
 }
+
 /* container */
+
 /* .page2 .container {
-  
+
 } */
 
 .page2 .title1 h3 {
-  font-family: 'Crete Round', serif;
   background-color: #fff;
   padding-top: 50px;
-  font-family: Crete Round;
+  font-family: "Crete Round", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 40px;
   line-height: 52px;
   display: flex;
-  color: #091E42;
+  color: #091e42;
 }
 
 .page2 .title1 h3::after {
   display: inline-block;
   content: "";
-  border-top: .1rem solid #212121;;
+  border-top: 0.1rem solid #212121;
   width: 70%;
   margin: 0 1rem;
   transform: translateY(20px);
@@ -186,12 +200,12 @@ header li a:hover {
 }
 
 .page2 .description h3 {
-  font-family: 'Crete Round',serif;
+  font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: normal;
   font-size: 40px;
   line-height: 52px;
-  color: #091E42;
+  color: #091e42;
 }
 
 .page2 .description p {
@@ -204,9 +218,11 @@ header li a:hover {
 }
 
 /* container end */
+
 /* container2 */
+
 /* .page2 .container2 {
-  
+
 } */
 
 .page2 img {
@@ -228,6 +244,7 @@ header li a:hover {
   padding: 12px 20px;
   margin: 2px;
 }
+
 .page2 .buttontypeA {
   margin-top: 60px;
 }
@@ -262,6 +279,14 @@ header li a:hover {
   color: white;
 }
 
+.page2 .site a {
+  text-decoration: none;
+}
+
+.page2 .site6 {
+  background-image: url(images/modinos.png);
+}
+
 .page2 .buttontypeA a:hover {
   background-color: #fff5e1;
   border: 1px solid #ff6b00;
@@ -269,7 +294,7 @@ header li a:hover {
 }
 
 .page3 .buttontypeA {
-  margin-top: 10px;
+  margin: 50px 0;
 }
 
 .page3 .buttontypeA a:hover {
@@ -285,35 +310,33 @@ header li a:hover {
   margin-bottom: 20px;
   background-repeat: no-repeat;
   background-size: cover;
-  max-width:336px;  
+  max-width: 336px;
 }
 
 .page2 .site1 {
   background-image: url(images/spoiledeggs.png);
 }
+
 .page2 .site2 {
   background-image: url(images/classicatournee.png);
 }
+
 .page2 .site3 {
   background-image: url(images/operapathway.png);
 }
+
 .page2 .site4 {
   background-image: url(images/singthemastersmob.png);
 }
+
 .page2 .site5 {
   background-image: url(images/callasprize.png);
 }
-.page2 .site6 {
-  background-image: url(images/modinos.png);
-}
-
-.page2 .site a {
-  text-decoration: none;
-}
 
 .page2 .site a .buttondecor p {
-  display:none;
+  display: none;
 }
+
 .page2 .site a:hover .buttondecor p {
   position: relative;
   bottom: 70px;
@@ -333,14 +356,15 @@ header li a:hover {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  background-image: linear-gradient(to bottom, rgba(253, 253, 253,0.8), rgb(0, 0, 0));
+  background-image: linear-gradient(to bottom, rgba(253, 253, 253, 0.8), rgb(0, 0, 0));
 }
-.page2 .site .greyout:hover{
+
+.page2 .site .greyout:hover {
   opacity: 0;
 }
 
 .page2 .buttontypeB {
-  position:relative;
+  position: relative;
   top: 90%;
   text-align: center;
 }
@@ -359,14 +383,41 @@ header li a:hover {
   color: white;
 }
 
+.page3 .text {
+  max-width: 50%;
+  font-family: 'Inter', serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 32px;
+  color: #f4f5f7;
+  padding-right: 24px;
+}
 
 .page2 .site .text {
   padding: 0 10px;
   color: white;
 }
 
+.page4 form ul {
+  grid-column: 2;
+  grid-row: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+}
+
 .page2 .site ul {
   padding: 0 5px;
+}
+
+.page4 form ul li {
+  font-family: 'Inter', serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .page2 .site ul li {
@@ -387,12 +438,11 @@ header li a:hover {
   background-size: 40%;
 }
 
-
 .page3 .container {
   display: grid;
   grid-template-rows: 100px 80px 170px 20px 200px;
   grid-template-columns: auto;
-  grid-gap: 14px;  
+  grid-gap: 14px;
   padding: 0 84px;
 }
 
@@ -405,21 +455,6 @@ header li a:hover {
   margin-top: 0;
   letter-spacing: 0.37px;
 }
-.page3 .text {
-  max-width: 50%;
-  font-family: 'Inter', serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 32px;
-  color: #f4f5f7;
-  padding-right: 24px;
-  
-}
-
-.page3 .buttontypeA {
-  margin: 50px 0;
-}
 
 .page3 .container .hr {
   margin: 170px 0;
@@ -430,6 +465,7 @@ header li a:hover {
   /* Adding for desktop start */
   display: flex;
   justify-content: space-between;
+
   /* Adding for desktop end */
   padding: 0;
   list-style-type: none;
@@ -446,6 +482,10 @@ header li a:hover {
   color: #fff;
 }
 
+.page4 ul li a:hover i {
+  color: rgb(248, 176, 245);
+}
+
 .page3 .container .header i {
   color: #ff6b00;
 }
@@ -457,7 +497,11 @@ header li a:hover {
 
 .page3 .container .nested .list {
   list-style: none;
-  padding:0;
+  padding: 0;
+}
+
+.page4 .mediacontainer ul li {
+  margin: 5%;
 }
 
 .page3 .container .nested .list li {
@@ -471,7 +515,6 @@ header li a:hover {
   line-height: 43px;
   text-align: left;
 }
-
 
 .page4 {
   height: 100vh;
@@ -490,24 +533,6 @@ header li a:hover {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 30px;
-}
-
-.page4 h3 {
-  grid-column: 1 / 2;
-  grid-row: 1;
-  font-family: 'Inter', serif;
-  font-size: 40px;
-}
-
-
-.page4 form ul {
-  grid-column: 2;
-  grid-row: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  list-style-type: none;
-  padding: 0;
 }
 
 .page4 form #getintouch {
@@ -530,13 +555,6 @@ header li a:hover {
   color: #ff6b00;
 }
 
-.page4 form ul li {
-  font-family: 'Inter', serif;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
 .page4 form ul li input {
   border: none;
   height: 37px;
@@ -548,35 +566,36 @@ header li a:hover {
   padding: 10px;
 }
 
-.page4 form ul li input:-ms-input-placeholder { /* Internet Explorer 10-11 */
-  color: #979493;
-}
-
 .page4 form ul li input::-ms-input-placeholder { /* Microsoft Edge */
   color: #979493;
 }
 
-  .page4 form ul li textarea {
-    border: none;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    height: 150px;
-    background: #fbf8f7;
-  }
-  .page4 form ul li textarea::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: #3C3A39;
-    opacity: 1; /* Firefox */
-    font-family: sans-serif;
-    padding: 10px;
-    }
+.page4 form ul li input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #979493;
+}
 
-    .page4 form ul li textarea:-ms-input-placeholder { /* Internet Explorer 10-11 */
-      color: #3C3A39;
-    }
-    
-    .page4 form ul li textarea::-ms-input-placeholder { /* Microsoft Edge */
-      color: #3C3A39;
-    }
+.page4 form ul li textarea {
+  border: none;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  height: 150px;
+  background: #fbf8f7;
+}
+
+.page4 form ul li textarea::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #3c3a39;
+  opacity: 1; /* Firefox */
+  font-family: sans-serif;
+  padding: 10px;
+}
+
+.page4 form ul li textarea::-ms-input-placeholder { /* Microsoft Edge */
+  color: #3c3a39;
+}
+
+.page4 form ul li textarea:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #3c3a39;
+}
 
 .page4 .mediacontainer {
   bottom: 0;
@@ -589,25 +608,6 @@ header li a:hover {
   padding: 0;
 }
 
-.page4 .mediacontainer ul li {
-  margin: 5%;
-}
-.page4 .mediacontainer ul li i {
-  margin: 10px;
-  color: #505f79;
-}
-
-.page4 ul li a:hover i {
-  color: rgb(248, 176, 245);
-}
-  
-
-/* @media (max-width: 1153px){
-  .page1 {
-    background-size: 60%;
-    background-position: 100% 100%;
-  }
-} */
 @media (max-width: 700px) {
   header .desktop {
     display: none;
@@ -619,7 +619,6 @@ header li a:hover {
     grid-template-rows: 1fr 4fr 3fr;
     grid-gap: 8px;
     height: 100vh;
-    
   }
 
   header h1 {
@@ -634,12 +633,11 @@ header li a:hover {
 
   .home {
     grid-column: 1 / 2;
-    grid-row: 2;  
+    grid-row: 2;
   }
 
   .home .text {
     padding-left: 5%;
-    
   }
 
   .home .text h2 {
@@ -652,7 +650,14 @@ header li a:hover {
     color: #f55800;
   }
 
-  
+  .page4 h3 {
+    font-size: 32px;
+    line-height: 44px;
+    text-align: center;
+    color: #172b4d;
+    grid-column: 1;
+    grid-row: 1;
+  }
 
   .home .text h3 {
     color: #fff;
@@ -679,8 +684,6 @@ header li a:hover {
     justify-content: flex-end;
   }
 
-  
-
   .asidedesktop {
     display: none;
   }
@@ -689,9 +692,7 @@ header li a:hover {
     grid-column: 1;
     grid-row: 3;
     display: flex;
-    justify-content:flex-start;
-
-    
+    justify-content: flex-start;
   }
 
   .asidemobile ul {
@@ -703,18 +704,18 @@ header li a:hover {
   .asidemobile ul li {
     list-style: none;
     padding: 20px;
-    
   }
 
   .asidemobile ul li i {
     color: #cfcfcf;
   }
-  
+
   .page2 {
     min-height: 100vh;
-    padding: 0 0;grid-template-rows: 1fr 2.3fr;
+    padding: 0 0;
+    grid-template-rows: 1fr 2.3fr;
   }
-  
+
   .page2 .container {
     display: grid;
     grid-template-rows: 229px 238px 278px 150px 149px;
@@ -748,16 +749,14 @@ header li a:hover {
   }
 
   .page2 .description h3 {
-    font-family: 'Crete Round',serif;
+    font-family: 'Crete Round', serif;
     font-style: normal;
     font-weight: normal;
     font-size: 32px;
     line-height: 44px;
-    color: #091E42;
+    color: #091e42;
   }
-  .page2 .site a .buttondecor p {
-    display:none;
-  }
+
   .page2 .site a .buttondecor p {
     position: relative;
     bottom: 70px;
@@ -777,18 +776,18 @@ header li a:hover {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-  
     opacity: 1;
   }
+
   .page2 .site1 .title {
     padding-top: 22px;
   }
+
   .page2 .buttontypeB {
-    position:relative;
+    position: relative;
     top: 90%;
     text-align: center;
   }
-  
 
   .page2 ul {
     list-style: none;
@@ -797,13 +796,14 @@ header li a:hover {
     flex-wrap: wrap;
     align-content: space-around;
   }
-  
+
   .page2 ul li {
     border: 1px solid black;
+
     /* padding: 12px 20px; */
     margin: 2px;
   }
-  
+
   .page2 .site {
     margin: 20px;
   }
@@ -817,7 +817,7 @@ header li a:hover {
     display: grid;
     grid-template-rows: 77px 86px 158px 153px 209px;
     grid-template-columns: 327px;
-    grid-gap: 14px;  
+    grid-gap: 14px;
     padding: 0 24px;
   }
 
@@ -830,7 +830,6 @@ header li a:hover {
     line-height: 24px;
     color: #f4f5f7;
     padding-right: 24px;
-    
   }
 
   .page3 .container .hr {
@@ -838,14 +837,12 @@ header li a:hover {
     padding: 0;
   }
 
-  
   .page3 .container .nested .header {
     font-size: 32px;
     line-height: 44px;
   }
 
-  
-.page3 .container .nested .list li {  
+  .page3 .container .nested .list li {
     text-align: center;
     font-size: 22px;
     line-height: 43px;
@@ -860,7 +857,7 @@ header li a:hover {
     grid-template-rows: 8fr 1fr;
     grid-gap: 135px;
   }
- 
+
   .page4 form {
     display: grid;
     grid-template-columns: 1fr;
@@ -869,15 +866,6 @@ header li a:hover {
 
   .page4 .titleForm {
     padding: 0 24px;
-  }
-
-  .page4 h3 {
-    font-size: 32px;
-    line-height: 44px;
-    text-align: center;
-    color: #172B4D;
-    grid-column: 1;
-    grid-row: 1;
   }
 
   .page4 form ul {
@@ -889,111 +877,4 @@ header li a:hover {
     grid-column: 1;
     grid-row: 3;
   }
-}/*end of mediaquery
-/*
-@media (max-width: 459px) {
-  .page2 .site1 {
-    height: 400px;
-  }
 }
-
-@media (max-width: 416px) {
-  .asidemobile ul li {
-    list-style: none;
-    height: 100px;
-    margin: 80px 20px;
-  }
-}
-
-@media (max-width: 367px) {
-  .page2 .site1 {
-    height: 420px;
-  }
-
-  .page3 .title1 {
-    font-size: 50px;
-  }
-}
-
-@media (max-width: 350px) {
-  .home .image img {
-    display: none;
-  }
-
-  header .desktop {
-    display: none;
-  }
-
-  header .mobile {
-    display: flex;
-    color: #fff;
-    margin: 10%;
-  }
-
-  .home {
-    position: relative;
-    display: flex;
-    top: 15vh;
-    width: 95%;
-    left: 5%;
-    margin-bottom: 30%;
-  }
-
-  .home .text h2 {
-    font-family: 'Crete Round', serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 40px;
-    line-height: 41px;
-    color: #f55800;
-  }
-
-  .home .text h3 {
-    color: #fff;
-    font-family: 'Inter', serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 44px;
-  }
-
-  .home .text p {
-    color: #f4f5f7;
-    font-family: 'Inter', serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 15px;
-    line-height: 32px;
-  }
-
-  .asidedesktop {
-    display: none;
-  }
-
-  .asidemobile {
-    display: block;
-    position: relative;
-    flex-wrap: nowrap;
-  }
-
-  .asidemobile ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-  }
-
-  .asidemobile ul li {
-    list-style: none;
-    height: 100px;
-    margin: 20px;
-  }
-
-  .asidemobile ul li i {
-    color: #cfcfcf;
-  }
-
-  .page2 .site1 {
-    height: 475px;
-  }
-} */
