@@ -858,14 +858,37 @@ header li a:hover {
   .page4 {
     display: grid;
     grid-template-rows: 8fr 1fr;
+    grid-gap: 135px;
   }
-  This is blocking grid above the mediaquery
+ 
   .page4 form {
-    display: flex;
-    flex-direction: column;
-    align-content:space-evenly;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
   }
 
+  .page4 .titleForm {
+    padding: 0 24px;
+  }
+
+  .page4 h3 {
+    font-size: 32px;
+    line-height: 44px;
+    text-align: center;
+    color: #172B4D;
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .page4 form ul {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .page4 form #getintouch {
+    grid-column: 1;
+    grid-row: 3;
+  }
 }/*end of mediaquery
 /*
 @media (max-width: 459px) {
