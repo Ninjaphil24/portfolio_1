@@ -123,9 +123,8 @@ header li a:hover {
   font-weight: normal;
   font-size: 62px;
   line-height: 71px;
-  color: #f55800;  
+  color: #f55800;
   transition: 1s;
-  
 }
 
 .home .text h2:hover {
