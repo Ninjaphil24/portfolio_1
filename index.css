@@ -25,7 +25,6 @@ header .mobile {
 }
 
 header {
-  /* border: 1px solid yellow; */
   grid-column: 1 / span 3;
   grid-row: 1;
   display: flex;
@@ -48,8 +47,6 @@ header h1 {
 header ul {
   display: flex;
   justify-content: flex-end;
-
-  /* border: 1px solid white; */
 }
 
 header li {
@@ -74,7 +71,6 @@ header li a:hover {
 }
 
 .asidedesktop {
-  /* border: 1px solid red; */
   grid-column: 1;
   grid-row: 1 / span 3;
 }
@@ -106,13 +102,11 @@ header li a:hover {
 }
 
 .home {
-  /* border: 1px solid red; */
   grid-column: 2;
   grid-row: 2 / 3;
 }
 
 .home .text {
-  /* border: 1px double blue; */
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -168,12 +162,6 @@ header li a:hover {
   grid-gap: 10px;
 }
 
-/* container */
-
-/* .page2 .container {
-
-} */
-
 .page2 .title1 h3 {
   background-color: #fff;
   padding-top: 50px;
@@ -217,14 +205,6 @@ header li a:hover {
   line-height: 24px;
 }
 
-/* container end */
-
-/* container2 */
-
-/* .page2 .container2 {
-
-} */
-
 .page2 img {
   width: 60%;
   object-fit: fill;
@@ -246,7 +226,7 @@ header li a:hover {
 }
 
 .page2 .buttontypeA {
-  margin-top: 60px;
+  margin-top: 40px;
 }
 
 .page2 .buttontypeA a {
@@ -462,11 +442,8 @@ header li a:hover {
 }
 
 .page3 .container .nested {
-  /* Adding for desktop start */
   display: flex;
   justify-content: space-between;
-
-  /* Adding for desktop end */
   padding: 0;
   list-style-type: none;
   margin: 80px 0;
@@ -608,7 +585,7 @@ header li a:hover {
   padding: 0;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 972px) {
   header .desktop {
     display: none;
   }
@@ -748,6 +725,10 @@ header li a:hover {
     padding-right: 10px;
   }
 
+  .page2 .buttontypeA {
+    margin-top: 4px;
+  }
+
   .page2 .description h3 {
     font-family: 'Crete Round', serif;
     font-style: normal;
@@ -799,8 +780,6 @@ header li a:hover {
 
   .page2 ul li {
     border: 1px solid black;
-
-    /* padding: 12px 20px; */
     margin: 2px;
   }
 
@@ -876,5 +855,11 @@ header li a:hover {
   .page4 form #getintouch {
     grid-column: 1;
     grid-row: 3;
+  }
+
+  .page4 .mediacontainer ul li i {
+    font-size: 28px;
+    margin: 10px;
+    color: #505f79;
   }
 }
