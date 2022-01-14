@@ -64,6 +64,7 @@ header li a {
 
 header li a:hover {
   background: #b3adad;
+  transition: 1s;
 }
 
 .asidemobile {
@@ -95,10 +96,13 @@ header li a:hover {
 .page4 .mediacontainer ul li i {
   margin: 10px;
   color: #505f79;
+  transform: scale(1);
+  transition: 1s;
 }
 
 .asidedesktop ul li a:hover i {
   color: rgb(248, 176, 245);
+  transition: 0.8s;
 }
 
 .home {
@@ -119,7 +123,14 @@ header li a:hover {
   font-weight: normal;
   font-size: 62px;
   line-height: 71px;
-  color: #f55800;
+  color: #f55800;  
+  transition: 1s;
+  
+}
+
+.home .text h2:hover {
+  transform: rotate(10deg);
+  transition: 1s;
 }
 
 .page4 h3 {
@@ -340,6 +351,7 @@ header li a:hover {
 }
 
 .page2 .site .greyout:hover {
+  transition: 1s;
   opacity: 0;
 }
 
@@ -461,6 +473,8 @@ header li a:hover {
 
 .page4 ul li a:hover i {
   color: rgb(248, 176, 245);
+  transform: scale(1.5);
+  transition: 1s;
 }
 
 .page3 .container .header i {
