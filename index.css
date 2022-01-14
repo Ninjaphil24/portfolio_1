@@ -725,6 +725,10 @@ header li a:hover {
     padding-right: 10px;
   }
 
+  .page2 .buttontypeA {
+    margin-top: 4px;
+  }
+
   .page2 .description h3 {
     font-family: 'Crete Round', serif;
     font-style: normal;
@@ -733,9 +737,7 @@ header li a:hover {
     line-height: 44px;
     color: #091e42;
   }
-  .page2 .buttontypeA {
-    margin-top: 4px;
-  }
+
   .page2 .site a .buttondecor p {
     position: relative;
     bottom: 70px;
