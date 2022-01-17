@@ -13,6 +13,9 @@ The current webpage is fully responsive and has several live links, leading to o
 
 To get a local copy up and running follow these simple example steps.
 
+## Live Demo
+
+[Live Demo Link](https://ninjaphil24.github.io/portfolio_1/)
 ### Prerequisites
 Any standard browser
 ### Setup
