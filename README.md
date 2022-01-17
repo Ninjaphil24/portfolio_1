@@ -2,7 +2,8 @@
 
 # Developer's Portfolio of Philip Modinos
 
-> This is the professional developer portfolio of Philip Modinos.  Philip has been coding since 2019, focusing on html/css and php/mysql using XAMPP.  He has developed several sites for German music companies "Opera Classica Europa" and "Bad Ems Music Festival" including the site www.offenbachgp.com, which was an online singing competition, that included applause and comments by the audience and a fully automated registration system.  
+> This is the professional developer portfolio of Philip Modinos.  You can visit this website at:  https://ninjaphil24.github.io/portfolio_1/
+> Philip has been coding since 2019, focusing on html/css and php/mysql using XAMPP.  He has developed several sites for German music companies "Opera Classica Europa" and "Bad Ems Music Festival" including the site www.offenbachgp.com, which was an online singing competition, that included applause and comments by the audience and a fully automated registration system.  
 The current webpage is fully responsive and has several live links, leading to other existing projects.  For the inactive links, there will be an update later in time, once those projects have been reuploaded.  
 
 ![screenshot](./images/readmedemo.png)
