@@ -19,7 +19,7 @@ body {
   grid-template-rows: 1fr 10fr;
   grid-gap: 20px;
 }
-
+header .toggle-mobile,
 header .mobile {
   display: none;
 }
@@ -599,8 +599,44 @@ header li a:hover {
 }
 
 @media (max-width: 972px) {
+  
+  /* Temporary tag  */
+  header {
+    display: block;
+  }
+
   header .desktop {
-    display: none;
+    /* display: none; temporary comment out*/
+    padding-right: 24px;
+  }
+  
+  header .desktop ul {
+    display: block;
+    padding: 24px;
+  }
+
+  header .desktop li {
+    text-align: start;   
+    padding: 10px; 
+    width: 100%;
+    border-bottom: 1px solid #6F6C6B;
+  }
+
+  header .desktop a {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  header .desktop i {
+    display:none;
+  }
+
+/* Will become active */
+  .page1 header {
+    height: 100vh;
   }
 
   .page1 {
@@ -610,20 +646,30 @@ header li a:hover {
     grid-gap: 8px;
     height: 100vh;
   }
-
+/* Temporary display none */
   header h1 {
+    display: none;
     font-size: x-large;
   }
-
-  header .mobile {
+/* Temporary active */
+  header .mobile .active {
     display: flex;
     color: #fff;
     margin: 40px;
+  }
+  
+  header .toggle-mobile {
+    display: block;
+    text-align:end;
+    color: #fff;
+    margin: 40px;
+    
   }
 
   .home {
     grid-column: 1 / 2;
     grid-row: 2;
+    z-index: 9;
   }
 
   .home .text {
