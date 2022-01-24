@@ -19,7 +19,7 @@ body {
   grid-template-rows: 1fr 10fr;
   grid-gap: 20px;
 }
-header .times,
+header .toggle-mobile,
 header .mobile {
   display: none;
 }
@@ -600,25 +600,29 @@ header li a:hover {
 
 @media (max-width: 972px) {
   
-  
-  header .active {
+  /* Temporary tag  */
+  header {
     display: block;
-    height: 100vh;
   }
 
-  header .toggle-mobile ul .active {
+  header .desktop {
+    /* display: none; temporary comment out*/
+    padding-right: 24px;
+  }
+  
+  header .desktop ul {
     display: block;
     padding: 24px;
   }
 
-  header .toggle-mobile li .active {
+  header .desktop li {
     text-align: start;   
     padding: 10px; 
     width: 100%;
     border-bottom: 1px solid #6F6C6B;
   }
 
-  header .toggle-mobile a .active {
+  header .desktop a {
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -626,8 +630,13 @@ header li a:hover {
     line-height: 44px;
   }
 
-  header .toggle-mobile li i .active{
+  header .desktop i {
     display:none;
+  }
+
+/* Will become active */
+  .page1 header {
+    height: 100vh;
   }
 
   .page1 {
@@ -637,22 +646,23 @@ header li a:hover {
     grid-gap: 8px;
     height: 100vh;
   }
-
-  header h1 .active {
+/* Temporary display none */
+  header h1 {
+    display: none;
     font-size: x-large;
   }
-
-  header .mobile {
+/* Temporary active */
+  header .mobile .active {
     display: flex;
     color: #fff;
     margin: 40px;
   }
   
-  header .toggle-mobile .active {
+  header .toggle-mobile {
     display: block;
     text-align:end;
     color: #fff;
-    margin: 24px;
+    margin: 40px;
     
   }
 
