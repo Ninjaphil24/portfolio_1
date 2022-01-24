@@ -600,11 +600,12 @@ header li a:hover {
 
 @media (max-width: 972px) {
   
-  /* Temporary tag  */
+  /* This will become active  */
   header {
     display: block;
+    height: 100vh;
   }
-
+  
   header .desktop {
     /* display: none; temporary comment out*/
     padding-right: 24px;
@@ -634,10 +635,6 @@ header li a:hover {
     display:none;
   }
 
-/* Will become active */
-  .page1 header {
-    height: 100vh;
-  }
 
   .page1 {
     display: grid;
