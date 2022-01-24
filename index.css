@@ -599,31 +599,33 @@ header li a:hover {
 }
 
 @media (max-width: 972px) {
-  
+  .desktop {
+    display: none;
+  }
   /* This will become active  */
-  header {
+  header .active {
     display: block;
     height: 100vh;
   }
   
-  header .desktop {
+  header .desktop .active {
     /* display: none; temporary comment out*/
     padding-right: 24px;
   }
   
-  header .desktop ul {
+  header .desktop ul .active {
     display: block;
     padding: 24px;
   }
 
-  header .desktop li {
+  header .desktop li .active {
     text-align: start;   
     padding: 10px; 
     width: 100%;
     border-bottom: 1px solid #6F6C6B;
   }
 
-  header .desktop a {
+  header .desktop a .active {
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -631,7 +633,7 @@ header li a:hover {
     line-height: 44px;
   }
 
-  header .desktop i {
+  header .desktop i .active {
     display:none;
   }
 
@@ -645,17 +647,16 @@ header li a:hover {
   }
 /* Temporary display none */
   header h1 {
-    display: none;
     font-size: x-large;
   }
 /* Temporary active */
-  header .mobile .active {
+  header .mobile {
     display: flex;
     color: #fff;
     margin: 40px;
   }
   
-  header .toggle-mobile {
+  header .toggle-mobile .active {
     display: block;
     text-align:end;
     color: #fff;
