@@ -20,6 +20,7 @@ body {
   grid-gap: 20px;
 }
 
+header .toggle-mobile,
 header .mobile {
   display: none;
 }
@@ -599,8 +600,132 @@ header li a:hover {
 }
 
 @media (max-width: 972px) {
-  header .desktop {
+  .desktop {
     display: none;
+  }
+
+  .active {
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    height: 100vh;
+  }
+
+  .active .desktop {
+    display: block;
+    width: 100%;
+
+    /* margin-right: 24px; */
+  }
+
+  .asidemobile ul {
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .asidemobile ul li {
+    list-style: none;
+    padding: 20px;
+  }
+
+  .asidemobile ul li i {
+    color: #cfcfcf;
+  }
+
+  .page2 ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+  }
+
+  .page4 form ul {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .active .desktop ul {
+    display: block;
+    padding: 0;
+    margin-left: 24px;
+    margin-right: 64px;
+  }
+
+  .page2 ul li {
+    border: 1px solid black;
+    margin: 2px;
+  }
+
+  .active .desktop li {
+    text-align: start;
+    padding: 10px;
+    width: 100%;
+    border-bottom: 1px solid #6f6c6b;
+  }
+
+  .active .desktop a {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  .active .mobile i {
+    display: none;
+  }
+
+  .active .desktop a i {
+    display: none;
+  }
+
+  header .mobile {
+    display: flex;
+    color: #fff;
+    margin: 40px;
+  }
+
+  .active .mobile {
+    align-self: flex-end;
+  }
+
+  .mobile .bars {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobile .bars .bar {
+    border: 2px solid white;
+    width: 30px;
+    margin: 5px;
+  }
+
+  .mobile .close {
+    display: none;
+  }
+
+  .active .mobile .bars {
+    display: none;
+  }
+
+  .active .mobile .close {
+    display: block;
+  }
+
+  .active .mobile .close .firstLine,
+  .active .mobile .close .secondLine {
+    border: 2px solid white;
+    width: 30px;
+    margin: 5px;
+  }
+
+  .active .mobile .close .firstLine {
+    transform: rotate(45deg) translate(-2px, 10px);
+  }
+
+  .active .mobile .close .secondLine {
+    transform: rotate(-45deg) translate(-2px, -7px);
   }
 
   .page1 {
@@ -611,12 +736,21 @@ header li a:hover {
     height: 100vh;
   }
 
+  header {
+    align-items: center;
+  }
+
   header h1 {
     font-size: x-large;
   }
 
-  header .mobile {
-    display: flex;
+  .active h1 {
+    display: none;
+  }
+
+  .active .toggle-mobile {
+    display: block;
+    text-align: end;
     color: #fff;
     margin: 40px;
   }
@@ -624,6 +758,7 @@ header li a:hover {
   .home {
     grid-column: 1 / 2;
     grid-row: 2;
+    z-index: 9;
   }
 
   .home .text {
@@ -683,21 +818,6 @@ header li a:hover {
     grid-row: 3;
     display: flex;
     justify-content: flex-start;
-  }
-
-  .asidemobile ul {
-    padding: 0;
-    display: flex;
-    justify-content: flex-start;
-  }
-
-  .asidemobile ul li {
-    list-style: none;
-    padding: 20px;
-  }
-
-  .asidemobile ul li i {
-    color: #cfcfcf;
   }
 
   .page2 {
@@ -783,19 +903,6 @@ header li a:hover {
     text-align: center;
   }
 
-  .page2 ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: space-around;
-  }
-
-  .page2 ul li {
-    border: 1px solid black;
-    margin: 2px;
-  }
-
   .page2 .site {
     margin: 20px;
   }
@@ -858,11 +965,6 @@ header li a:hover {
 
   .page4 .titleForm {
     padding: 0 24px;
-  }
-
-  .page4 form ul {
-    grid-column: 1;
-    grid-row: 2;
   }
 
   .page4 form #getintouch {

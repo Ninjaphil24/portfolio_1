@@ -7,30 +7,40 @@
     <title>Porfolio - PDM</title>
     <link rel="stylesheet" href="index.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-</head>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8PQYD54DJ1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-8PQYD54DJ1');
-</script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8PQYD54DJ1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        
+        gtag('config', 'G-8PQYD54DJ1');
+    </script>
+    </head>
 <body>
 <section class="page1">
-    <header>
-    <a href="#"><h1>Philip Modinos</h1></a>
-    <nav class="desktop">
-        <ul>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact  <i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
-        </ul>
-    </nav>
-    <nav class="mobile">
-        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
-    </nav>    
+    <header class="toggle">
+        
+            <a href="#"><h1>Philip Modinos</h1></a>
+            <nav class="desktop">
+                <ul>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact  <i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
+                </ul>
+            </nav>
+            <nav class="mobile">
+                <div class="bars">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <div class="close">
+                    <div class="firstLine"></div>
+                    <div class="secondLine"></div>
+                </div>
+            </nav>
+        
     </header>
 
     <aside class="asidedesktop">
@@ -60,9 +70,7 @@
     
 </section> 
 
-<a name="portfolio"></a>
-
-<section class="page2">
+<section class="page2" id="portfolio">
     <div class="container">
         <div class="title1">
            <h3>My Recent Works</h3>
@@ -91,7 +99,7 @@
         <div class="site site1">
          <a href="https://spoiledeggs.eu5.org/" rel=”noopener”><div class="greyout">
                 <div class="description">
-                    <h4 class="title">Spoiled Eggs</h4>
+                    <div class="title">Spoiled Eggs</div>
                     <p class="text">Spoiled Eggs was the original template for 2 projects and those two projects were used to promote Spoiled Eggs.  It's a review site for opera, where people can rage click "applause" or "throwing eggs" and of course comment.</p>
                 </div>
                 <ul class="items lang">
@@ -109,7 +117,7 @@
         <div class="site site2">
          <a href="#portfolio"><div class="greyout">
                 <div class="description">
-                    <h4 class="title">Classica Tournée</h4>
+                    <div class="title">Classica Tournée</div>
                     <p class="text">A site meant as an extension of Opera Classica Europa's Inthega classifieds, which is a platform intended on facilitating touring in Germany.</p>
                 </div>
                 <ul class="items lang">
@@ -125,7 +133,7 @@
         <div class="site site3">
          <a href="#portfolio"><div class="greyout">
                 <div class="description">
-                    <h4 class="title">Opera Pathway</h4>
+                    <div class="title">Opera Pathway</div>
                     <p class="text">The advertisement and application process for Opera Classica Europa's Opera Studio program, called the Opera Pathway.</p>
                 </div>
                 <ul class="items lang">
@@ -141,7 +149,7 @@
         <div class="site site4">
          <a href="#portfolio"><div class="greyout">
                 <div class="description">
-                    <h4 class="title">Sing the masters</h4>
+                    <div class="title">Sing the masters</div>
                     <p class="text">A template intended at hosting music competitions, mostly those that were dedicated to a composer.  The Offenbach GP was such a competition later in time.</p>
                 </div>
                 <ul class="items lang">
@@ -157,7 +165,7 @@
         <div class="site site5">
          <a href="#portfolio"><div class="greyout">
                 <div class="description">
-                    <h4 class="title">Callas Prize</h4>
+                    <div class="title">Callas Prize</div>
                     <p class="text">The advertisement and application process to enter the Callas Prize competition, which was supposed to take place at the Alte Oper Frankfurt for the finals.  Unfortunately cancelled due to COVID.</p>
                 </div>
                 <ul class="items lang">
@@ -173,7 +181,7 @@
         <div class="site site6">
          <a href="https://philipmodinos.ueuo.com/" rel=”noopener”><div class="greyout">
                 <div class="description">
-                    <h4 class="title">Singing Portfolio</h4>
+                    <div class="title">Singing Portfolio</div>
                     <p class="text">My personal singing portfolio and also the first site I ever coded.  In it's initial form it was merely a list, but later I created an interesting, albeit somewhat glitchy, navbar system.</p>
                 </div>
                 <ul class="items lang">
@@ -188,8 +196,7 @@
     </div>
 </section>
 <br> <br> <br>
-<a name="about"></a>
-<section class="page3">
+<section class="page3" id="about">
     <div class="container">
         <br> <br> 
         <h3 class="title">About me</h3>
@@ -229,8 +236,8 @@
         </ul>
     </div>
 </section>
-<a name="contact"></a>
-<section class="page4">
+
+<section class="page4" id="contact">
     <div class="titleForm">
         <form action="https://formspree.io/f/xoqrjvve" method="post">
             <h3>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h3>
@@ -260,5 +267,6 @@
     </div>
 </section>
 
+<script src="main.js"></script>
 </body>
- 
+</html>
