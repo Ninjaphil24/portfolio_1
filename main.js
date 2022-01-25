@@ -6,3 +6,10 @@ const navToggle = () => {
 };
 
 navToggle();
+
+function toggle(){
+  var blur = document.getElementById('portfolio');
+  blur.classList.toggle('active');
+  var blur = document.getElementById('popUp');
+  blur.classList.toggle('active');
+}

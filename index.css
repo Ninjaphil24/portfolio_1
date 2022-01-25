@@ -125,12 +125,6 @@ header li a:hover {
   font-size: 62px;
   line-height: 71px;
   color: #f55800;
-  transition: 1s;
-}
-
-.home .text h2:hover {
-  transform: rotate(10deg);
-  transition: 1s;
 }
 
 .page4 h3 {
@@ -171,6 +165,33 @@ header li a:hover {
   display: grid;
   grid-template-rows: 2fr 3fr;
   grid-gap: 10px;
+}
+
+#popUp {  
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height: 631px;
+  width: 1156px;
+  background: #FFFFFF;
+  z-index: 100;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+#popUp.active {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+
+.page2.active {
+  filter: blur(20px);
+  pointer-events: none;
+  user-select: none;
 }
 
 .page2 .title1 h3 {
