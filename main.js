@@ -5,7 +5,6 @@ const navToggle = () => {
     
     burger.addEventListener('click', () => {
         toggler.classList.toggle('active');
-        navbuttons.classList.toggle('active');
     });
 }
 
