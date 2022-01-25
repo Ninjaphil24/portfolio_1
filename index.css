@@ -19,6 +19,7 @@ body {
   grid-template-rows: 1fr 10fr;
   grid-gap: 20px;
 }
+
 header .toggle-mobile,
 header .mobile {
   display: none;
@@ -602,31 +603,65 @@ header li a:hover {
   .desktop {
     display: none;
   }
-  
+
   .active {
     flex-direction: column-reverse;
     justify-content: flex-end;
     height: 100vh;
   }
-  
+
   .active .desktop {
     display: block;
     width: 100%;
+
     /* margin-right: 24px; */
   }
-  
-  .active .desktop ul  {
+
+  .asidemobile ul {
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .asidemobile ul li {
+    list-style: none;
+    padding: 20px;
+  }
+
+  .asidemobile ul li i {
+    color: #cfcfcf;
+  }
+
+  .page2 ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+  }
+
+  .page4 form ul {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .active .desktop ul {
     display: block;
     padding: 0;
     margin-left: 24px;
     margin-right: 64px;
   }
 
-  .active .desktop li  {
-    text-align: start;   
+  .page2 ul li {
+    border: 1px solid black;
+    margin: 2px;
+  }
+
+  .active .desktop li {
+    text-align: start;
     padding: 10px;
     width: 100%;
-    border-bottom: 1px solid #6F6C6B;
+    border-bottom: 1px solid #6f6c6b;
   }
 
   .active .desktop a {
@@ -636,13 +671,19 @@ header li a:hover {
     font-size: 32px;
     line-height: 44px;
   }
-  
-  .active .desktop a i {
-    display:none;
-  }
 
   .active .mobile i {
-    display:none;
+    display: none;
+  }
+
+  .active .desktop a i {
+    display: none;
+  }
+
+  header .mobile {
+    display: flex;
+    color: #fff;
+    margin: 40px;
   }
 
   .active .mobile {
@@ -678,13 +719,13 @@ header li a:hover {
     width: 30px;
     margin: 5px;
   }
-  
+
   .active .mobile .close .firstLine {
-    transform: rotate(45deg) translate(-2px,10px);
+    transform: rotate(45deg) translate(-2px, 10px);
   }
-  
+
   .active .mobile .close .secondLine {
-    transform: rotate(-45deg) translate(-2px,-7px);
+    transform: rotate(-45deg) translate(-2px, -7px);
   }
 
   .page1 {
@@ -698,21 +739,16 @@ header li a:hover {
   header h1 {
     font-size: x-large;
   }
+
   .active h1 {
-    display:none;
+    display: none;
   }
 
-  header .mobile {
-    display: flex;
-    color: #fff;
-    margin: 40px;
-  }
-  
   .active .toggle-mobile {
     display: block;
     text-align: end;
     color: #fff;
-    margin: 40px;    
+    margin: 40px;
   }
 
   .home {
@@ -778,21 +814,6 @@ header li a:hover {
     grid-row: 3;
     display: flex;
     justify-content: flex-start;
-  }
-
-  .asidemobile ul {
-    padding: 0;
-    display: flex;
-    justify-content: flex-start;
-  }
-
-  .asidemobile ul li {
-    list-style: none;
-    padding: 20px;
-  }
-
-  .asidemobile ul li i {
-    color: #cfcfcf;
   }
 
   .page2 {
@@ -878,19 +899,6 @@ header li a:hover {
     text-align: center;
   }
 
-  .page2 ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: space-around;
-  }
-
-  .page2 ul li {
-    border: 1px solid black;
-    margin: 2px;
-  }
-
   .page2 .site {
     margin: 20px;
   }
@@ -955,10 +963,7 @@ header li a:hover {
     padding: 0 24px;
   }
 
-  .page4 form ul {
-    grid-column: 1;
-    grid-row: 2;
-  }
+
 
   .page4 form #getintouch {
     grid-column: 1;
