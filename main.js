@@ -1,7 +1,7 @@
 const navToggle = () => {
-    const burger = document.querySelector('.mobile');
+    const burger = document.querySelector('.toggle');
     const toggler = document.querySelector('.toggle');
-    const navbuttons = document.querySelector('.active desktop ul li a')
+    
     
     burger.addEventListener('click', () => {
         toggler.classList.toggle('active');
