@@ -602,41 +602,82 @@ header li a:hover {
   .desktop {
     display: none;
   }
-  /* This will become active  */
-  header .active {
-    display: block;
+  
+  .active {
+    flex-direction: column-reverse;
+    justify-content: flex-end;
     height: 100vh;
   }
   
-  header .desktop .active {
-    /* display: none; temporary comment out*/
-    padding-right: 24px;
+  .active .desktop {
+    display: block;
+    width: 100%;
+    /* margin-right: 24px; */
   }
   
-  header .desktop ul .active {
+  .active .desktop ul  {
     display: block;
-    padding: 24px;
+    padding: 0;
+    margin-left: 24px;
+    margin-right: 64px;
   }
 
-  header .desktop li .active {
+  .active .desktop li  {
     text-align: start;   
-    padding: 10px; 
+    padding: 10px;
     width: 100%;
     border-bottom: 1px solid #6F6C6B;
   }
 
-  header .desktop a .active {
+  .active .desktop a {
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 32px;
     line-height: 44px;
   }
-
-  header .desktop i .active {
+  
+  .active .desktop a i {
     display:none;
   }
 
+  .active .mobile i {
+    display:none;
+  }
+
+  .active .mobile {
+    align-self: flex-end;
+  }
+
+  .mobile .bars {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobile .bars .bar {
+    border: 2px solid white;
+    width: 30px;
+    margin: 5px;
+  }
+
+  .mobile .close {
+    display: none;
+  }
+
+  .active .mobile .bars {
+    display: none;
+  }
+
+  .active .mobile .close {
+    display: block;
+  }
+
+  .active .mobile .close .firstLine,
+  .active .mobile .close .secondLine {
+    border: 2px solid white;
+    width: 30px;
+    margin: 5px;
+  }
 
   .page1 {
     display: grid;
@@ -645,23 +686,25 @@ header li a:hover {
     grid-gap: 8px;
     height: 100vh;
   }
-/* Temporary display none */
+
   header h1 {
     font-size: x-large;
   }
-/* Temporary active */
+  .active h1 {
+    display:none;
+  }
+
   header .mobile {
     display: flex;
     color: #fff;
     margin: 40px;
   }
   
-  header .toggle-mobile .active {
+  .active .toggle-mobile {
     display: block;
-    text-align:end;
+    text-align: end;
     color: #fff;
-    margin: 40px;
-    
+    margin: 40px;    
   }
 
   .home {
