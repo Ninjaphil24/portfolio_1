@@ -82,4 +82,5 @@ function toggle(arrayNumber) {
   document.getElementById('live').innerHTML = popUpInfo.liveButton[arrayNumber];
   document.getElementById('source').innerHTML = popUpInfo.sourceButton[arrayNumber];
 }
+/* eslint-disable no-unused-vars */
 

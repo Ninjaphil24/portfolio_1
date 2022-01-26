@@ -633,13 +633,14 @@ header li a:hover {
 }
 
 #popUp.active h3 {
-  font-family: 'Crete Round', sans-serif;
+  font-family: 'Roboto',sans-serif;
   font-size: 32px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 44px;
-  letter-spacing: 0;
-  text-align: left;
+  letter-spacing: 0em;
+  align-self:flex-start;
+
 }
 
 #popUp.active ul {
@@ -684,13 +685,13 @@ header li a:hover {
 }
 
 #popUp.active .text ul {
-  display: flex;
   list-style-type: none;
+  justify-content: space-between;
   padding: 0;
 }
 
 #popUp.active .text ul li {
-  margin: -20px 10px 0 0;
+  margin: -20px 10px 0 -19px;
   border: none;
 }
 
