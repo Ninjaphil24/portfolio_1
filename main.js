@@ -83,4 +83,3 @@ function toggle(arrayNumber) {
   document.getElementById('source').innerHTML = popUpInfo.sourceButton[arrayNumber];
 }
 /* eslint-disable no-unused-vars */
-

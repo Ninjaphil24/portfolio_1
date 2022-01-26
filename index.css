@@ -633,14 +633,13 @@ header li a:hover {
 }
 
 #popUp.active h3 {
-  font-family: 'Roboto',sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
   line-height: 44px;
-  letter-spacing: 0em;
-  align-self:flex-start;
-
+  letter-spacing: 0;
+  align-self: flex-start;
 }
 
 #popUp.active ul {
