@@ -7,7 +7,6 @@ const navToggle = () => {
 
 navToggle();
 
-/* eslint no-unused-vars */
 const popUpInfo = [{
   title: 'Offenbach',
   badges: '<li>html</li><li>css</li><li>php</li><li>mysql</li><li>javascript</li>',
