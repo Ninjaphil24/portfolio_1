@@ -644,13 +644,14 @@ header li a:hover {
 
 #popUp.active ul {
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
   padding: 0;
 }
 
 #popUp.active ul li {
   padding: 5px 20px;
-  margin: -20px 10px 0 0;
+  margin: 9px 10px 0 0;
   border: 1px solid #3c3a39;
 }
 
