@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Inter:400,500,600,700,800&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Crete Round:400,500,600,700,800&display=swap');
 @import url('https://fonts.googleapis.com/css?family=InaiMathi:400,500,600,700,800&display=swap');
@@ -125,12 +126,6 @@ header li a:hover {
   font-size: 62px;
   line-height: 71px;
   color: #f55800;
-  transition: 1s;
-}
-
-.home .text h2:hover {
-  transform: rotate(10deg);
-  transition: 1s;
 }
 
 .page4 h3 {
@@ -171,6 +166,12 @@ header li a:hover {
   display: grid;
   grid-template-rows: 2fr 3fr;
   grid-gap: 10px;
+}
+
+.page2.active {
+  filter: blur(20px);
+  pointer-events: none;
+  user-select: none;
 }
 
 .page2 .title1 h3 {
@@ -599,6 +600,137 @@ header li a:hover {
   padding: 0;
 }
 
+#popUp {
+  position: fixed;
+  border: 1px solid black;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 631px;
+  width: 1156px;
+  background: #fff;
+  padding: 24px;
+  z-index: 100;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+#popUp.active {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+#popUp.active .closer {
+  position: fixed;
+  right: 38px;
+  top: 38px;
+}
+
+#popUp.active a {
+  font-size: 20px;
+  color: #67798e;
+}
+
+#popUp.active h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 0;
+  align-self: flex-start;
+  color: #172b4d;
+}
+
+#popUp.active ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+}
+
+#popUp.active ul li {
+  padding: 5px 20px;
+  margin: 9px 15px 0 0;
+  border: 1px solid #3c3a39;
+}
+
+#popUp.active ul li a {
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+#popUp.active .img {
+  float: left;
+}
+
+#popUp.active img {
+  max-width: 659px;
+}
+
+#popUp.active .text {
+  float: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 424px;
+  height: 72%;
+  padding: 0 25px;
+}
+
+#popUp.active .text p {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+#popUp.active .text ul {
+  list-style-type: none;
+  justify-content: space-between;
+  padding: 0;
+}
+
+#popUp.active .text ul li {
+  margin: -20px 10px 0 -19px;
+  border: none;
+}
+
+#popUp.active .text ul li a {
+  background: #f55800;
+  padding: 13px 20px;
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #fff;
+}
+
+#popUp.active .text ul li a img {
+  margin: -6px;
+  padding-left: 10px;
+}
+
+#popUp.active .text ul li a:hover {
+  background-color: #fff5e1;
+  border: 1px solid #ff6b00;
+  color: #ff6b00;
+}
+
 @media (max-width: 972px) {
   .desktop {
     display: none;
@@ -613,8 +745,6 @@ header li a:hover {
   .active .desktop {
     display: block;
     width: 100%;
-
-    /* margin-right: 24px; */
   }
 
   .asidemobile ul {
@@ -949,6 +1079,35 @@ header li a:hover {
 
   .page3 .container .nested {
     flex-direction: column;
+  }
+
+  #popUp {
+    width: 80%;
+    top: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #popUp img,
+  #popUp .img,
+  #popUp.active .text {
+    width: 100%;
+  }
+
+  #popUp.active .text ul li {
+    margin-right: -21px;
+  }
+
+  #popUp.active .text ul li a {
+    font-size: 12px;
+    padding-right: 2px;
+  }
+
+  #popUp.active .text ul li a img {
+    width: 20px;
+    padding-right: 15px;
   }
 
   .page4 {
