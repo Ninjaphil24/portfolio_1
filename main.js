@@ -68,7 +68,7 @@ const popUpInfo = {
   ],
 
 };
-
+/* eslint-disable no-unused-vars */
 function toggle(arrayNumber) {
   const blur = document.getElementById('portfolio');
   blur.classList.toggle('active');
@@ -83,4 +83,3 @@ function toggle(arrayNumber) {
   document.getElementById('source').innerHTML = popUpInfo.sourceButton[arrayNumber];
 }
 
-toggle();
