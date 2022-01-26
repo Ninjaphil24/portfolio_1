@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Inter:400,500,600,700,800&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Crete Round:400,500,600,700,800&display=swap');
 @import url('https://fonts.googleapis.com/css?family=InaiMathi:400,500,600,700,800&display=swap');
@@ -640,6 +641,7 @@ header li a:hover {
   line-height: 44px;
   letter-spacing: 0;
   align-self: flex-start;
+  color: #172b4d;
 }
 
 #popUp.active ul {
@@ -651,8 +653,18 @@ header li a:hover {
 
 #popUp.active ul li {
   padding: 5px 20px;
-  margin: 9px 10px 0 0;
+  margin: 9px 15px 0 0;
   border: 1px solid #3c3a39;
+}
+
+#popUp.active ul li a {
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0;
+  text-align: left;
 }
 
 #popUp.active .img {
