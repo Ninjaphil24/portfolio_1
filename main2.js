@@ -1,13 +1,3 @@
-const navToggle = () => {
-  const toggler = document.querySelector('.toggle');
-  toggler.addEventListener('click', () => {
-    toggler.classList.toggle('active');
-  });
-};
-
-navToggle();
-
-/* eslint no-unused-vars */
 const popUpInfo = [{
   title: 'Offenbach',
   badges: '<li>html</li><li>css</li><li>php</li><li>mysql</li><li>javascript</li>',
@@ -64,38 +54,3 @@ const popUpInfo = [{
   liveButton: '<a href="#" rel=”noopener”>See Live <img src="images/liveIcon.png" alt="Live Icon"></a>',
   sourceButton: '<a href="#" rel=”noopener”>See Source <img src="images/gitIcon.png" alt="Source Icon"></a>',
 }];
-
-function toggle(arrayNumber) {
-  const blur = document.getElementById('portfolio');
-  blur.classList.toggle('active');
-  const blur2 = document.getElementById('popUp');
-  blur2.classList.toggle('active');
-
-  document.getElementById('title').innerHTML = popUpInfo[arrayNumber].title;
-  document.getElementById('img').innerHTML = popUpInfo[arrayNumber].image;
-  document.getElementById('badges').innerHTML = popUpInfo[arrayNumber].badges;
-  document.getElementById('text').innerHTML = popUpInfo[arrayNumber].text;
-  document.getElementById('live').innerHTML = popUpInfo[arrayNumber].liveButton;
-  document.getElementById('source').innerHTML = popUpInfo[arrayNumber].sourceButton;
-}
-
-const click1 = document.getElementById('offenbach');
-click1.addEventListener('click', () => { toggle(0); });
-
-const click2 = document.getElementById('spoiledeggs');
-click2.addEventListener('click', () => { toggle(1); });
-
-const click3 = document.querySelector('.site2');
-click3.addEventListener('click', () => { toggle(2); });
-
-const click4 = document.querySelector('.site3');
-click4.addEventListener('click', () => { toggle(3); });
-
-const click5 = document.querySelector('.site4');
-click5.addEventListener('click', () => { toggle(4); });
-
-const click6 = document.querySelector('.site5');
-click6.addEventListener('click', () => { toggle(5); });
-
-const click7 = document.querySelector('.site6');
-click7.addEventListener('click', () => { toggle(6); });
