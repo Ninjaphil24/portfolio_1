@@ -552,6 +552,15 @@ header li a:hover {
   height: 37px;
 }
 
+.page4 .error {
+  border: 1px solid red;
+}
+
+.page4 #error {
+  color: #e74c3c;
+  visibility: visible;
+}
+
 .page4 form ul li input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #979493;
   opacity: 1; /* Firefox */
