@@ -98,3 +98,20 @@ click6.addEventListener('click', () => { toggle(5); });
 
 const click7 = document.querySelector('.site6');
 click7.addEventListener('click', () => { toggle(6); });
+
+const form = document.getElementById('form');
+const mail = document.getElementById('mail');
+const errorElement = document.getElementById('error');
+
+form.addEventListener('submit', (e) => {
+  const messages = [];
+  if (mail.value.match(/([A-Z])/g)) {
+    messages.push('No Capitals allowed!');
+    mail.classList.toggle('error');
+  }
+
+  if (messages.length > 0) {
+    e.preventDefault();
+    errorElement.innerHTML = messages.join(', ');
+  }
+});
