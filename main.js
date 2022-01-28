@@ -103,6 +103,14 @@ const form = document.getElementById('form');
 const mail = document.getElementById('mail');
 const errorElement = document.getElementById('error');
 
+function saveLocal() {
+  const callName = document.getElementById('name').value;
+  const callEmail = document.getElementById('mail').value;
+  const storeData = { name: callName, email: callEmail };
+  const storeString = JSON.stringify(storeData);
+  localStorage.setItem('stored', storeString);
+}
+
 form.addEventListener('submit', (e) => {
   const messages = [];
   if (mail.value.match(/([A-Z])/g)) {
@@ -114,4 +122,9 @@ form.addEventListener('submit', (e) => {
     e.preventDefault();
     errorElement.innerHTML = messages.join(', ');
   }
+  saveLocal();
 });
+
+const storeParse = JSON.parse(localStorage.getItem('stored'));
+document.getElementById('name').value = storeParse.name;
+document.getElementById('mail').value = storeParse.email;
