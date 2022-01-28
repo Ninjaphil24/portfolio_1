@@ -79,25 +79,25 @@ function toggle(arrayNumber) {
 }
 
 const click1 = document.getElementById('offenbach');
-click1.addEventListener('click', () => { toggle(0); });
+click1.addEventListener('click', toggle(0));
 
 const click2 = document.getElementById('spoiledeggs');
-click2.addEventListener('click', () => { toggle(1); });
+click2.addEventListener('click', toggle(1));
 
 const click3 = document.querySelector('.site2');
-click3.addEventListener('click', () => { toggle(2); });
+click3.addEventListener('click', toggle(2));
 
 const click4 = document.querySelector('.site3');
-click4.addEventListener('click', () => { toggle(3); });
+click4.addEventListener('click', toggle(3));
 
 const click5 = document.querySelector('.site4');
-click5.addEventListener('click', () => { toggle(4); });
+click5.addEventListener('click', toggle(4));
 
 const click6 = document.querySelector('.site5');
-click6.addEventListener('click', () => { toggle(5); });
+click6.addEventListener('click', toggle(5));
 
 const click7 = document.querySelector('.site6');
-click7.addEventListener('click', () => { toggle(6); });
+click7.addEventListener('click', toggle(6));
 
 const form = document.getElementById('form');
 const mail = document.getElementById('mail');
