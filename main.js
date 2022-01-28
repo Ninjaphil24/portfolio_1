@@ -117,11 +117,18 @@ form.addEventListener('submit', (e) => {
   saveLocal();
 });
 
+var callName = document.getElementById('name').value;
+var callEmail = document.getElementById('mail').value;
 function saveLocal() {
   var callName = document.getElementById('name').value;
   var callEmail = document.getElementById('mail').value;
   var storeData = {name: callName,email: callEmail};
   var storeString = JSON.stringify(storeData);
   localStorage.setItem('stored',storeString);
-
 }
+
+var storeParse = JSON.parse(localStorage.getItem('stored'));
+document.getElementById('name').value = callName.value = storeParse.name;
+document.getElementById('mail').value = callEmail.value = storeParse.email;
+
+
