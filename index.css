@@ -164,7 +164,8 @@ header li a:hover {
   min-height: 100vh;
   padding: 0 141px;
   display: grid;
-  grid-template-rows: 2fr 3fr;
+  grid-template-rows: 3fr;
+  /* grid-template-rows: 2fr 3fr; for when Offenbachgp is online */
   grid-gap: 10px;
 }
 
@@ -309,20 +310,48 @@ header li a:hover {
   background-image: url(images/spoiledeggs.png);
 }
 
+.page2 .site1p5 {
+  background-image: url(images/laragigs.png);
+}
+
 .page2 .site2 {
   background-image: url(images/classicatournee.png);
+}
+
+.page2 .site2p5 {
+  background-image: url(images/weather.png);
 }
 
 .page2 .site3 {
   background-image: url(images/operapathway.png);
 }
 
+.page2 .site3p5 {
+  background-image: url(images/localstorage.png);
+}
+
 .page2 .site4 {
   background-image: url(images/singthemastersmob.png);
 }
 
+.page2 .site4p5 {
+  background-image: url(images/tictactoe.png);
+}
+
 .page2 .site5 {
-  background-image: url(images/callasprize.png);
+  background-image: url(images/threejs.png);
+}
+
+.page2 .site5p5 {
+  background-image: url(images/calculator.png);
+}
+
+.page2 .site6 {
+  background-image: url(images/etchasketch.png);
+}
+
+.page2 .site6p5 {
+  background-image: url(images/modinos.png);
 }
 
 .page2 .site a .buttondecor p {
@@ -374,6 +403,10 @@ header li a:hover {
   padding-left: 10px;
   font-size: 40px;
   color: white;
+}
+
+.page2 .container2 {
+  margin-top: 30px;
 }
 
 .page3 .text {
@@ -962,7 +995,8 @@ header li a:hover {
   .page2 {
     min-height: 100vh;
     padding: 0 0;
-    grid-template-rows: 1fr 2.3fr;
+    grid-template-rows: 2.3fr;
+    /* grid-template-rows: 1fr 2.3fr; for when offenbachgp is up*/
   }
 
   .page2 .container {
