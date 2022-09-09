@@ -7,61 +7,169 @@ const navToggle = () => {
 
 navToggle();
 
+
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.querySelector(".toggle").style.top = "0";
+  } else {
+    document.querySelector(".toggle").style.top = "-100px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+
+  function myFunction() {
+  var x = document.getElementById("pdf");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+  //   var counter = 1;
+
+  // function counterClick(radioNum){
+  //   counter = radioNum;
+  // };
+
+  //   setInterval(function(){
+  //     document.getElementById('radio'+ counter).checked = true;
+  //     counter++;
+  //     if(counter>6){
+  //         counter=1;
+  //     }
+  // },3000);
+
+
 const popUpInfo = [{
-  title: 'Offenbach',
-  badges: '<li>html</li><li>css</li><li>php</li><li>mysql</li><li>javascript</li>',
+  title: 'Offenbach Grand Prix Singing Competition',
+  badges: '<li>html</li><li>css</li><li>php</li><li>ajax</li><li>jquery</li><li>mysql</li><li>javascript</li>',
   image: '<img src="images/offenbach.png" alt="Offenbach Grand Prix Homepage">',
   text: 'A fully online opera-singing competition, where the audience can comment and applaud, and where the jury comments in full view of the audience.  Automated application process, which includes video and biog upload, as well as an automatically generated contract in the end.',
-  liveButton: '<a href="https://www.offenbachgp.com/" rel=”noopener”>See Live <img src="images/liveIcon.png" alt="Live Icon"></a>',
-  sourceButton: '<a href="#" rel=”noopener”>See Source <img src="images/gitIcon.png" alt="Source Icon"></a>',
+  liveButton: '<a href="http://offenbachdemo.eu5.org/" rel=”noopener” target="_blank">See Live <img src="images/liveIcon.png" alt="Live Icon"></a>',
+  sourceButton: '<a href="https://github.com/Ninjaphil24/offenbachgp" target="_blank" rel=”noopener”>See Source <img src="images/gitIcon.png" alt="Source Icon"></a>',
 },
 {
   title: 'Spoiled Eggs',
-  badges: '<li>html</li><li>css</li><li>php</li><li>mysql</li><li>javascript</li>',
+  badges: '<li>html</li><li>css</li><li>php</li><li>ajax</li><li>jquery</li><li>mysql</li><li>javascript</li>',
   image: '<img src="images/spoiledeggsdesk.png" alt="Spoiled Eggs">',
   text: 'Spoiled Eggs was the original template for 2 projects and those two projects were used to promote Spoiled Eggs.  It is a review site for opera, where people can rage click "applause" or "throwing eggs" and of course comment.',
-  liveButton: '<a href="https://spoiledeggs.eu5.org/" rel=”noopener”>See Live <img src="images/liveIcon.png" alt="Live Icon"></a>',
-  sourceButton: '<a href="#" rel=”noopener”>See Source <img src="images/gitIcon.png" alt="Source Icon"></a>',
+  liveButton: '<a href="https://spoiledeggs.eu5.org/" target="_blank" rel=”noopener”>See Live <img src="images/liveIcon.png" alt="Live Icon"></a>',
+  sourceButton: '<a href="https://github.com/Ninjaphil24/spoiledeggs" target="_blank" rel=”noopener”>See Source <img src="images/gitIcon.png" alt="Source Icon"></a>',
+},
+{
+  title: 'Laravel Demo',
+  badges: '<li>html</li><li>css</li><li>php/laravel</li><li>mysql</li>',
+  image: '<img src="images/laragigs.png" alt="Laravel Demo">',
+  text: 'A demo of full CRUD functionality using Laravel.  Note that the demo version does not allow for chmod 777 on deploy, therefore uploading logos is not possible, even though the app can do it.  Tutorial by Brad Traversy.',
+  liveButton: '<a href="https://laragigsdemo.herokuapp.com/" target="_blank" rel=”noopener”>See Live <img src="images/liveIcon.png" alt="Live Icon"></a>',
+  sourceButton: '<a href="https://github.com/Ninjaphil24/laragigs" target="_blank" rel=”noopener”>See Source <img src="images/gitIcon.png" alt="Source Icon"></a>',
 },
 {
   title: 'Classica Tournée',
   badges: '<li>html</li><li>css</li><li>javascript</li>',
   image: '<img src="images/classicatourneedesk.png" alt="Classica Tournée">',
   text: 'A site meant as an extension of Opera Classica Europa`s Inthega classifieds, which is a platform intended on facilitating touring in Germany.',
-  liveButton: '<a href="#" rel=”noopener”>See Live <img src="images/liveIcon.png" alt="Live Icon"></a>',
-  sourceButton: '<a href="#" rel=”noopener”>See Source <img src="images/gitIcon.png" alt="Source Icon"></a>',
+  liveButton: '<a href="https://ninjaphil24.github.io/ocetournee/" target="_blank" rel="noopener">See Live <img src="images/liveIcon.png" alt="Live Icon"></a>',
+  sourceButton: '<a href="https://github.com/Ninjaphil24/ocetournee" target="_blank" rel=”noopener”>See Source <img src="images/gitIcon.png" alt="Source Icon"></a>',
+},
+{
+  title: 'Weather App',
+  badges: '<li>html</li><li>css</li><li>javascript</li><li>json</li><li>api</li>',
+  image: '<img src="images/weather.png" alt="Weather App">',
+  text: "A weather app meant as an exercise in json and api.",
+  liveButton: '<a href="https://ninjaphil24.github.io/OdinWeatherApp/" target="_blank" rel="noopener">See Live <img src="images/liveIcon.png" alt="Live Icon"></a>',
+  sourceButton: '<a href="https://github.com/Ninjaphil24/OdinWeatherApp" target="_blank" rel=”noopener”>See Source <img src="images/gitIcon.png" alt="Source Icon"></a>',
 },
 {
   title: 'Opera Pathway',
   badges: '<li>html</li><li>css</li><li>javascript</li>',
-  image: '<img src="images/operapathwaydesk.png" alt="Offenbach Grand Prix Homepage">',
+  image: '<img src="images/operapathwaydesk.png" alt="Opera Pathway to performance">',
   text: "The advertisement and application process for Opera Classica Europa's Opera Studio program, called the Opera Pathway.",
-  liveButton: '<a href="#" rel=”noopener”>See Live <img src="images/liveIcon.png" alt="Live Icon"></a>',
-  sourceButton: '<a href="#" rel=”noopener”>See Source <img src="images/gitIcon.png" alt="Source Icon"></a>',
+  liveButton: '<a href="#" target="_blank" rel=”noopener”>See Live <img src="images/liveIcon.png" alt="Live Icon"></a>',
+  sourceButton: '<a href="https://github.com/Ninjaphil24/pathwayperformance" target="_blank" rel=”noopener”>See Source <img src="images/gitIcon.png" alt="Source Icon"></a>',
+},
+{
+  title: 'Local Storage (Add Student)',
+  badges: '<li>html</li><li>css</li><li>javascript</li>',
+  image: '<img src="images/localstorage.png" alt="Local Storage">',
+  text: "An exercise in the use of local storage in browsers.",
+  liveButton: '<a href="https://ninjaphil24.github.io/LocalStorageStudentList/" target="_blank" rel=”noopener”>See Live <img src="images/liveIcon.png" alt="Live Icon"></a>',
+  sourceButton: '<a href="https://github.com/Ninjaphil24/LocalStorageStudentList" target="_blank" rel=”noopener”>See Source <img src="images/gitIcon.png" alt="Source Icon"></a>',
 },
 {
   title: 'Sing the masters',
   badges: '<li>html</li><li>css</li><li>javascript</li>',
-  image: '<img src="images/singthemasters.png" alt="Sing the Masters">',
-  text: 'A template intended at hosting music competitions, mostly those that were dedicated to a composer.  The Offenbach GP was such a competition later in time.',
-  liveButton: '<a href="#" rel=”noopener”>See Live <img src="images/liveIcon.png" alt="Live Icon"></a>',
-  sourceButton: '<a href="#" rel=”noopener”>See Source <img src="images/gitIcon.png" alt="Source Icon"></a>',
+  image: '<img src="images/singthemasters.png" alt="Sing the masters">',
+  text: "A template intended at hosting music competitions, mostly those that were dedicated to a composer.  The Offenbach GP was such a competition later in time.",
+  liveButton: '<a href="https://singthemasters.ueuo.com/" target="_blank" rel=”noopener”>See Live <img src="images/liveIcon.png" alt="Live Icon"></a>',
+  sourceButton: '<a href="https://github.com/Ninjaphil24/singthemasters" target="_blank" rel=”noopener”>See Source <img src="images/gitIcon.png" alt="Source Icon"></a>',
 },
 {
-  title: 'Callas Prize',
+  title: 'Tic Tac Toe',
   badges: '<li>html</li><li>css</li><li>javascript</li>',
-  image: '<img src="images/callasprizedesk.png" alt="Callas Grand Prix">',
-  text: 'The advertisement and application process to enter the Callas Prize competition, which was supposed to take place at the Alte Oper Frankfurt for the finals.  Unfortunately cancelled due to COVID.',
-  liveButton: '<a href="#" rel=”noopener”>See Live <img src="images/liveIcon.png" alt="Live Icon"></a>',
-  sourceButton: '<a href="#" rel=”noopener”>See Source <img src="images/gitIcon.png" alt="Source Icon"></a>',
+  image: '<img src="images/tictactoe.png" alt="Tic Tac Toe">',
+  text: 'A javascript exercise for a basic game of tic tac toe.',
+  liveButton: '<a href="https://ninjaphil24.github.io/Odin-TicTacToe/" target="_blank" rel="noopener">See Live <img src="images/liveIcon.png" alt="Live Icon"></a>',
+  sourceButton: '<a href="https://github.com/Ninjaphil24/Odin-TicTacToe" target="_blank" rel=”noopener”>See Source <img src="images/gitIcon.png" alt="Source Icon"></a>',
+},
+{
+  title: 'Three js',
+  badges: '<li>html</li><li>css</li><li>javascript</li>',
+  image: '<img src="images/threejs.png" alt="Three js">',
+  text: 'A demo of a possible portfolio site using three.js.',
+  liveButton: '<a href="https://ninjaphil24.github.io/threedjavascript/" target="_blank" rel="noopener">See Live <img src="images/liveIcon.png" alt="Live Icon"></a>',
+  sourceButton: '<a href="https://github.com/Ninjaphil24/threedjavascript" target="_blank" rel=”noopener”>See Source <img src="images/gitIcon.png" alt="Source Icon"></a>',
+},
+{
+  title: 'Calculator',
+  badges: '<li>html</li><li>css</li><li>javascript</li>',
+  image: '<img src="images/calculator.png" alt="Calculator">',
+  text: 'A javascript exercise for creating a Calculator with javascript.',
+  liveButton: '<a href="https://ninjaphil24.github.io/Calculator/" target="_blank" rel="noopener">See Live <img src="images/liveIcon.png" alt="Live Icon"></a>',
+  sourceButton: '<a href="https://github.com/Ninjaphil24/Calculator" target="_blank" rel=”noopener”>See Source <img src="images/gitIcon.png" alt="Source Icon"></a>',
+},
+{
+  title: 'Etch-a-Sketch',
+  badges: '<li>html</li><li>css</li><li>javascript</li>',
+  image: '<img src="images/etchasketch.png" alt="Etch-a-Sketch">',
+  text: 'A javascript exercise in Etch-a-Sketch using javascript.',
+  liveButton: '<a href="https://ninjaphil24.github.io/Odin-Etch-a-Sketch/" target="_blank" rel="noopener" >See Live <img src="images/liveIcon.png" alt="Live Icon"></a>',
+  sourceButton: '<a href="https://github.com/Ninjaphil24/Odin-Etch-a-Sketch" target="_blank" rel=”noopener”>See Source <img src="images/gitIcon.png" alt="Source Icon"></a>',
+},
+{
+  title: 'Angular to do list',
+  badges: '<li>html</li><li>css</li><li>javascript</li><li>typescript</li><li>angular</li>',
+  image: '<img src="images/angular.png" alt="Angular">',
+  text: 'Tutorial in Angular by Brad Traversy.  Not deployed.',
+  liveButton: '<a href="">See Live <img src="images/liveIcon.png" alt="Live Icon"></a>',
+  sourceButton: '<a href="https://github.com/Ninjaphil24/angular-crash" target="_blank" rel=”noopener”>See Source <img src="images/gitIcon.png" alt="Source Icon"></a>',
+},
+{
+  title: 'Webpack',
+  badges: '<li>html</li><li>css</li><li>javascript</li>',
+  image: '<img src="images/webpack.png" alt="Webpack">',
+  text: 'Tutorial in Webpack by Swashbuckling with Code.  Not deployed.',
+  liveButton: '<a href="#portfolio">See Live <img src="images/liveIcon.png" alt="Live Icon"></a>',
+  sourceButton: '<a href="https://github.com/Ninjaphil24/webpack3" target="_blank" rel=”noopener”>See Source <img src="images/gitIcon.png" alt="Source Icon"></a>',
+},
+{
+  title: 'Coding Portfolio',
+  badges: '<li>html</li><li>css</li><li>javascript</li>',
+  image: '<img src="images/codingportfolio.png" alt="Portfolio">',
+  text: 'My personal coding portfolio, as initiated during my time at microverse.  Portfolio includes some interesting css and javascript in the "portfolio" section.',
+  liveButton: '<a href="https://ninjaphil24.github.io/portfolio_1/" target="_blank" rel=”noopener”>See Live <img src="images/liveIcon.png" alt="Live Icon"></a>',
+  sourceButton: '<a href="https://github.com/Ninjaphil24/portfolio_1" target="_blank" rel=”noopener”>See Source <img src="images/gitIcon.png" alt="Source Icon"></a>',
 },
 {
   title: 'Singing Porfolio',
   badges: '<li>html</li><li>css</li>',
   image: '<img src="images/modinosdesk.png" alt="Philip Modinos">',
   text: "My personal singing portfolio and also the first site I ever coded.  In it's initial form it was merely a list, but later I created an interesting, albeit somewhat glitchy, navbar system.",
-  liveButton: '<a href="#" rel=”noopener”>See Live <img src="images/liveIcon.png" alt="Live Icon"></a>',
-  sourceButton: '<a href="#" rel=”noopener”>See Source <img src="images/gitIcon.png" alt="Source Icon"></a>',
+  liveButton: '<a href="https://philipmodinos.ueuo.com/" target="_blank" rel=”noopener”>See Live <img src="images/liveIcon.png" alt="Live Icon"></a>',
+  sourceButton: '<a href="https://github.com/Ninjaphil24/singingportfolio" target="_blank" rel=”noopener”>See Source <img src="images/gitIcon.png" alt="Source Icon"></a>',
 }];
 
 function toggle(arrayNumber) {
@@ -84,20 +192,47 @@ click1.addEventListener('click', () => { toggle(0); });
 const click2 = document.getElementById('spoiledeggs');
 click2.addEventListener('click', () => { toggle(1); });
 
-const click3 = document.querySelector('.site2');
+const click3 = document.querySelector('.site1p5');
 click3.addEventListener('click', () => { toggle(2); });
 
-const click4 = document.querySelector('.site3');
+const click4 = document.querySelector('.site2');
 click4.addEventListener('click', () => { toggle(3); });
 
-const click5 = document.querySelector('.site4');
+const click5 = document.querySelector('.site2p5');
 click5.addEventListener('click', () => { toggle(4); });
 
-const click6 = document.querySelector('.site5');
+const click6 = document.querySelector('.site3');
 click6.addEventListener('click', () => { toggle(5); });
 
-const click7 = document.querySelector('.site6');
+const click7 = document.querySelector('.site3p5');
 click7.addEventListener('click', () => { toggle(6); });
+
+const click8 = document.querySelector('.site4');
+click8.addEventListener('click', () => { toggle(7); });
+
+const click9 = document.querySelector('.site4p5');
+click9.addEventListener('click', () => { toggle(8); });
+
+const click10 = document.querySelector('.site5');
+click10.addEventListener('click', () => { toggle(9); });
+
+const click11 = document.querySelector('.site5p5');
+click11.addEventListener('click', () => { toggle(10); });
+
+const click12 = document.querySelector('.site6');
+click12.addEventListener('click', () => { toggle(11); });
+
+const click13 = document.querySelector('.site7');
+click13.addEventListener('click', () => { toggle(12); });
+
+const click14 = document.querySelector('.site8');
+click14.addEventListener('click', () => { toggle(13); });
+
+const click15 = document.querySelector('.site9');
+click15.addEventListener('click', () => { toggle(14); });
+
+const click16 = document.querySelector('.site10');
+click16.addEventListener('click', () => { toggle(15); });
 
 const form = document.getElementById('form');
 const mail = document.getElementById('mail');

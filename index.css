@@ -33,6 +33,10 @@ header {
   background: #3e3c3c;
   justify-content: space-between;
   align-items: baseline;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  transition: 0.6s;
 }
 
 header a {
@@ -40,11 +44,19 @@ header a {
 }
 
 header h1 {
-  margin-left: 7%;
+  margin-left: 20%;
   font-size: 30px;
   color: #fff;
   white-space: nowrap;
+  padding: 10px;
+  padding-right: 28px;
 }
+
+header h1:hover {
+  background: #b3adad;
+  transition: 1s;
+}
+
 
 header ul {
   display: flex;
@@ -274,6 +286,7 @@ header li a:hover {
 
 .page2 .site a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 .page2 .site6 {
@@ -350,7 +363,16 @@ header li a:hover {
   background-image: url(images/etchasketch.png);
 }
 
-.page2 .site6p5 {
+.page2 .site7 {
+  background-image: url(images/angular.png);
+}
+.page2 .site8 {
+  background-image: url(images/webpack.png);
+}
+.page2 .site9 {
+  background-image: url(images/codingportfolio.png);
+}
+.page2 .site10 {
   background-image: url(images/modinos.png);
 }
 
@@ -466,7 +488,7 @@ header li a:hover {
 
 .page3 .container {
   display: grid;
-  grid-template-rows: 100px 80px 170px 20px 200px;
+  grid-template-rows: 100px 80px 291px 20px 200px;
   grid-template-columns: auto;
   grid-gap: 14px;
   padding: 0 84px;
@@ -496,13 +518,17 @@ header li a:hover {
 }
 
 .page3 .container .nested .header {
-  text-align: center;
+  text-align: left;
   font-family: 'Inter', serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 42px;
+  font-size: 32px;
   line-height: 44px;
   color: #fff;
+}
+
+.page3 .container .nested .long {
+  font-size: 20px;
 }
 
 .page4 ul li a:hover i {
@@ -513,6 +539,7 @@ header li a:hover {
 
 .page3 .container .header i {
   color: #ff6b00;
+  font-size: 32px;
 }
 
 .page3 .container .nested .rhombus i {
@@ -536,7 +563,7 @@ header li a:hover {
   font-family: 'Inter', serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 32px;
+  font-size: 22px;
   line-height: 43px;
   text-align: left;
 }
@@ -645,11 +672,13 @@ header li a:hover {
 #popUp {
   position: fixed;
   border: 1px solid black;
-  top: 40%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 631px;
-  width: 1156px;
+  /* height: 631px;
+  width: 1156px; */
+  height: 70%;
+  width: 70%;
   background: #fff;
   padding: 24px;
   z-index: 100;
@@ -668,6 +697,7 @@ header li a:hover {
   position: fixed;
   right: 38px;
   top: 38px;
+  cursor: pointer;
 }
 
 #popUp.active a {
@@ -711,10 +741,11 @@ header li a:hover {
 
 #popUp.active .img {
   float: left;
+  width: 40%;
 }
 
 #popUp.active img {
-  max-width: 659px;
+  max-width: 100%;
 }
 
 #popUp.active .text {

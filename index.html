@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Porfolio - PDM</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-8PQYD54DJ1"></script>
@@ -17,10 +18,11 @@
         gtag('config', 'G-8PQYD54DJ1');
     </script>
     </head>
-<body>
+    <body>
+    <section class="page1">
     <header class="toggle">
         
-        <a href="#"><h1>Philip Modinos</h1></a>
+        <a href="#"><h1>Home</h1></a>
         <nav class="desktop">
             <ul>
                 <li><a href="#portfolio">Portfolio</a></li>
@@ -40,9 +42,8 @@
             </div>
         </nav>
     
-</header>
+    </header>
 
-<section class="page1">
     
     <aside class="asidedesktop">
         <ul>
@@ -54,10 +55,9 @@
 
     <section class="home">
         <div class="text">
-        <h2>Hey There. <br> I'm Phil</h2>
-        <h3>I'm a Software Developer</h3>
-        <p>I can help you build a product, feature or website.  Look through some of my work and experience! If you like what you see and have a project you need coded, 
-            don’t hesitate to contact me.</p>
+        <h2>Philip Modinos</h2>
+        <h3>Web Developer</h3>
+        <p>Professional portfolio of web development, which includes past professional sites, as well as several projects created for educational purposes.</p>
         </div>
         
     </section>
@@ -73,7 +73,7 @@
 
 <div class="popUp" id="popUp">
     <div class="closer">
-        <a href="#portfolio" onclick="toggle()"><i class="fa fa-times" aria-hidden="true"></i></a>        
+        <a onclick="toggle()"><i class="fa fa-times" aria-hidden="true"></i></a>        
     </div>    
     
     <h3 id="title"></h3>
@@ -84,7 +84,7 @@
         <p id="text"> </p>
         <ul>
             <li id="live"></li>
-            <li id="source"><a href="#" rel=”noopener”>See Source <img src="images/gitIcon.png" alt="Git Icon"></a></li>
+            <li id="source"><a>See Source <img src="images/gitIcon.png" alt="Git Icon"></a></li>
         </ul>
     </div>
     
@@ -92,7 +92,7 @@
 
 <section class="page2" id="portfolio">
     
-    <!-- <div class="container">
+    <div class="container">
         <div class="title1">
            <h3>My Recent Works</h3>
            <div class="hr"><hr></div>        
@@ -108,18 +108,20 @@
             <li>html</li>
             <li>css</li>
             <li>php</li>
+            <li>ajax</li>
+            <li>jquery</li>
             <li>mysql</li>
             <li>javascript</li>
         </ul>
         <div class="buttontypeA">
         <a href="#portfolio" id="offenbach">See Project</a>
         </div>
-    </div> -->
+    </div>
 
     
     <div class="container2">
-        <div class="site site1" id="spoiledeggs">
-         <a href="https://spoiledeggs.eu5.org/" target="_blank" rel="noopener"><div class="greyout">
+        <div class="site site1">
+         <a href="#site1" id="spoiledeggs"><div class="greyout">
                 <div class="description">
                     <div class="title">Spoiled Eggs</div>
                     <p class="text">Spoiled Eggs was the original template for 2 projects and those two projects were used to promote Spoiled Eggs.  It's a review site for opera, where people can rage click "applause" or "throwing eggs" and of course comment.</p>
@@ -128,6 +130,8 @@
                     <li>html</li>
                     <li>css</li>
                     <li>php</li>
+                    <li>ajax</li>
+                    <li>jquery</li>
                     <li>mysql</li>
                     <li>javascript</li>
                 </ul>
@@ -136,8 +140,8 @@
                 <p>See Project</p>
             </div></a>
         </div>
-        <div class="site site1p5" id="laragigs">
-         <a href="https://laragigsdemo.herokuapp.com/" target="_blank" rel="noopener"><div class="greyout">
+        <div class="site site1p5">
+         <a href="#site1p5" id="laragigs"><div class="greyout">
                 <div class="description">
                     <div class="title">Laravel Demo</div>
                     <p class="text">A demo of full CRUD functionality using Laravel.  Note that the demo version doesn't allow for chmod 777 on deploy.  Tutorial by Brad Traversy.</p>
@@ -146,8 +150,7 @@
                     <li>html</li>
                     <li>css</li>
                     <li>php/laravel</li>
-                    <li>mysql</li>
-                    <li>javascript</li>
+                    <li>mysql</li>                    
                 </ul>
             </div>
             <div class="buttondecor">
@@ -155,7 +158,7 @@
             </div></a>
         </div>
         <div class="site site2">
-         <a href="https://ninjaphil24.github.io/ocetournee/" target="_blank" rel="noopener"><div class="greyout">
+         <a href="#site2"><div class="greyout">
                 <div class="description">
                     <div class="title">Classica Tournée</div>
                     <p class="text">A site meant as an extension of Opera Classica Europa's Inthega classifieds, which is a platform intended on facilitating touring in Germany.</p>
@@ -171,7 +174,7 @@
             </div></a>
         </div>
         <div class="site site2p5">
-         <a href="https://ninjaphil24.github.io/OdinWeatherApp/" target="_blank" rel="noopener"><div class="greyout">
+         <a href="#site2p5"><div class="greyout">
                 <div class="description">
                     <div class="title">Weather App</div>
                     <p class="text">A weather app meant as an exercise in json and api.</p>
@@ -189,7 +192,7 @@
             </div></a>
         </div>
         <div class="site site3">
-         <a href="https://ninjaphil24.github.io/pathwayperformance/" target="_blank" rel="noopener" ><div class="greyout">
+         <a href="#site3" ><div class="greyout">
                 <div class="description">
                     <div class="title">Opera Pathway</div>
                     <p class="text">The advertisement and application process for Opera Classica Europa's Opera Studio program, called the Opera Pathway.</p>
@@ -205,7 +208,7 @@
             </div></a>
         </div>
         <div class="site site3p5">
-         <a href="https://ninjaphil24.github.io/LocalStorageStudentList/" target="_blank" rel="noopener" ><div class="greyout">
+         <a href="#site3p5" ><div class="greyout">
                 <div class="description">
                     <div class="title">Local Storage (Add Student)</div>
                     <p class="text">An exercise in the use of local storage in browsers.  </p>
@@ -221,7 +224,7 @@
             </div></a>
         </div>
         <div class="site site4">
-         <a href="https://singthemasters.ueuo.com/" target="_blank" rel="noopener" ><div class="greyout">
+         <a href="#site4" ><div class="greyout">
                 <div class="description">
                     <div class="title">Sing the masters</div>
                     <p class="text">A template intended at hosting music competitions, mostly those that were dedicated to a composer.</p>
@@ -237,7 +240,7 @@
             </div></a>
         </div>
         <div class="site site4p5">
-         <a href="https://ninjaphil24.github.io/Odin-TicTacToe/" target="_blank" rel="noopener" ><div class="greyout">
+         <a><div class="greyout">
                 <div class="description">
                     <div class="title">Tic Tac Toe</div>
                     <p class="text">A javascript exercise for a basic game of tic tac toe.</p>
@@ -253,7 +256,7 @@
             </div></a>
         </div>
         <div class="site site5">
-         <a href="https://ninjaphil24.github.io/threedjavascript/" target="_blank" rel="noopener" ><div class="greyout">
+         <a><div class="greyout">
                 <div class="description">
                     <div class="title">Three js</div>
                     <p class="text">A demo of a possible portfolio site using three.js.</p>
@@ -269,7 +272,7 @@
             </div></a>
         </div>
         <div class="site site5p5">
-         <a href="https://ninjaphil24.github.io/Calculator/" target="_blank" rel="noopener" ><div class="greyout">
+         <a><div class="greyout">
                 <div class="description">
                     <div class="title">Javascript Calculator</div>
                     <p class="text">Exercise in creating a Calculator with javascript.</p>
@@ -285,7 +288,7 @@
             </div></a>
         </div>
         <div class="site site6">
-         <a href="https://ninjaphil24.github.io/Odin-Etch-a-Sketch/" target="_blank" rel="noopener" ><div class="greyout">
+         <a><div class="greyout">
                 <div class="description">
                     <div class="title">Etch-a-Sketch</div>
                     <p class="text">Exercise in Etch-a-Sketch using javascript.</p>
@@ -300,8 +303,59 @@
                 <p>See Project</p>
             </div></a>
         </div>
-        <div class="site site6p5">
-         <a href="#portfolio" ><div class="greyout">
+        <div class="site site7">
+         <a><div class="greyout">
+                <div class="description">
+                    <div class="title">Angular to do list</div>
+                    <p class="text">Tutorial in Angular by Brad Traversy.  Not deployed.</p>
+                </div>
+                <ul class="items lang">
+                    <li>html</li>
+                    <li>css</li>
+                    <li>javascript</li>
+                    <li>typescript</li>
+                    <li>angular</li>
+                </ul>
+            </div>
+            <div class="buttondecor">
+                <p>See Project</p>
+            </div></a>
+        </div>
+        <div class="site site8">
+         <a><div class="greyout">
+                <div class="description">
+                    <div class="title">Webpack</div>
+                    <p class="text">Tutorial in Webpack by Swashbuckling with Code.  Not deployed.</p>
+                </div>
+                <ul class="items lang">
+                    <li>html</li>
+                    <li>css</li>
+                    <li>javascript</li>
+                    <li>webpack</li>
+                </ul>
+            </div>
+            <div class="buttondecor">
+                <p>See Project</p>
+            </div></a>
+        </div>
+        <div class="site site9">
+         <a><div class="greyout">
+                <div class="description">
+                    <div class="title">Coding Portfolio</div>
+                    <p class="text">My personal coding portfolio's code as initiated during my time at microverse.</p>
+                </div>
+                <ul class="items lang">
+                    <li>html</li>
+                    <li>css</li>
+                    <li>javascript</li>
+                </ul>
+            </div>
+            <div class="buttondecor">
+                <p>See Project</p>
+            </div></a>
+        </div>
+        <div class="site site10">
+         <a><div class="greyout">
                 <div class="description">
                     <div class="title">Singing Portfolio</div>
                     <p class="text">My personal singing portfolio and also the first site I ever coded.  In it's initial form it was merely a list, but later I created an interesting, albeit somewhat glitchy, navbar system.</p>
@@ -321,11 +375,11 @@
 <section class="page3" id="about">
     <div class="container">
         <br> <br> 
-        <h3 class="title">About me</h3>
-        <p class="text">Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.
+        <h3 class="title">About Philip Modinos</h3>
+        <p class="text">Philip has been a web developer since 2019, a skill he decided to cultivate in support of his business at the time.  Since then Philip has created 3 platforms comissioned by Opera Classica Europa, Festival Gegen den Strom and the Hellenic Union of Lyric Soloists, as well as several promotional sites and online prospectus.  Online studies include microverse, the Odin Project, 3w schools, free coding camp to name but a few.  For Philip's full CV, including his non-coding career, please click below.
         </p>
         <div class="buttontypeA">
-            <a href="#">Get My Resume</a>
+            <a href="/images/CVModinos.pdf" download>Curriculum Vitae</a>
         </div>
         <div class="hr">
             <hr>
@@ -341,19 +395,30 @@
                 <li>Javascript</li>
                 <li>Python</li>
                 <li>Java</li>
+                <li>Mql4 & 5 (Metatrader)</li>
                 <li> <br> </li>
             </ul></li> 
-            <li class = "header"><i class="fa fa-square" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Frameworks
+            <li class = "header long"><i class="fa fa-square" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Frameworks/Libraries
                 <ul class="list">
                     <li>Bootstrap</li>
+                    <li>Tailwind</li>
+                    <li>Laravel</li>
                     <li>PhpMyAdmin</li>
+                    <li>Ajax</li>
+                    <li>jQuery</li>
+                    <li>Angular</li>
                     <li>Selenium</li>
+                    <li>T-Kinter</li>
                     <li> <br> </li>
                 </ul></li> 
             <li class = "header"><i class="fa fa-circle" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Skills
                 <ul class="list">
                     <li>Github</li>
                     <li>Terminal</li>
+                    <li>Debugging</li>
+                    <li>Developer tools</li>
+                    <li>Visual Studio Code</li>
+                    <li>Linters</li>
                 </ul></li>
         </ul>
     </div>
@@ -363,7 +428,7 @@
     <div class="titleForm">
         
         <form id="form" action="https://formspree.io/f/xoqrjvve" method="post">
-            <h3>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h3>
+            <h3>Please do not hesitate to contact Philip if you have any questions about his web development portfolio, or would like to speak about future projects.</h3>
             <ul>
             <li>
             <input type="text" id="name" name="user_name" placeholder="Full name:" required maxlength="50">
@@ -394,40 +459,6 @@
 <script src="main.js"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 
-<script>
-    var prevScrollpos = window.pageYOffset;
-    window.onscroll = function() {
-    var currentScrollPos = window.pageYOffset;
-      if (prevScrollpos > currentScrollPos) {
-        document.getElementById("navbar").style.top = "0";
-      } else {
-        document.getElementById("navbar").style.top = "-50px";
-      }
-      prevScrollpos = currentScrollPos;
-    }
-  
-      function myFunction() {
-      var x = document.getElementById("pdf");
-      if (x.style.display === "none") {
-        x.style.display = "block";
-      } else {
-        x.style.display = "none";
-      }
-    }
-  
-      //   var counter = 1;
-    
-      // function counterClick(radioNum){
-      //   counter = radioNum;
-      // };
-    
-      //   setInterval(function(){
-      //     document.getElementById('radio'+ counter).checked = true;
-      //     counter++;
-      //     if(counter>6){
-      //         counter=1;
-      //     }
-      // },3000);
-    </script>
+
 </body>
 </html>
