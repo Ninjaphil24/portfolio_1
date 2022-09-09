@@ -940,6 +940,7 @@ header li a:hover {
   }
 
   header {
+    height: 100px;
     align-items: center;
   }
 
@@ -1032,7 +1033,7 @@ header li a:hover {
 
   .page2 .container {
     display: grid;
-    grid-template-rows: 229px 238px 278px 150px 149px;
+    grid-template-rows: 229px 557px 278px 150px 149px;
     grid-template-columns: auto;
     grid-gap: 24px;
     background-color: #fff;
@@ -1118,12 +1119,15 @@ header li a:hover {
 
   .page3 .container {
     display: grid;
-    grid-template-rows: 77px 86px 158px 153px 209px;
+    grid-template-rows: 77px 86px 340px 172px 209px;
     grid-template-columns: 327px;
     grid-gap: 14px;
     padding: 0 24px;
   }
 
+  .page3 .title {
+    font-size: 45px;
+  }
   .page3 .text {
     max-width: 100%;
     font-family: 'Inter', serif;
@@ -1143,6 +1147,11 @@ header li a:hover {
   .page3 .container .nested .header {
     font-size: 32px;
     line-height: 44px;
+    text-align: center;
+  }
+
+  .page3 .container .nested .long {
+    font-size: 22px;
   }
 
   .page3 .container .nested .list li {
@@ -1209,5 +1218,16 @@ header li a:hover {
     font-size: 28px;
     margin: 10px;
     color: #505f79;
+  }
+}
+
+@media (max-width: 485px) {
+  .desktop {
+    display: none;
+  }
+
+  .page2 .container {
+    display: grid;
+    grid-template-rows: 229px 238px 278px 150px 149px;
   }
 }
