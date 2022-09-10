@@ -88,7 +88,7 @@ const popUpInfo = [{
   badges: '<li>html</li><li>css</li><li>javascript</li>',
   image: '<img src="images/operapathwaydesk.png" alt="Opera Pathway to performance">',
   text: "The advertisement and application process for Opera Classica Europa's Opera Studio program, called the Opera Pathway.",
-  liveButton: '<a href="#" target="_blank" rel=”noopener”>See Live <img src="images/liveIcon.png" alt="Live Icon"></a>',
+  liveButton: '<a href="https://ninjaphil24.github.io/pathwayperformance/" target="_blank" rel=”noopener”>See Live <img src="images/liveIcon.png" alt="Live Icon"></a>',
   sourceButton: '<a href="https://github.com/Ninjaphil24/pathwayperformance" target="_blank" rel=”noopener”>See Source <img src="images/gitIcon.png" alt="Source Icon"></a>',
 },
 {
