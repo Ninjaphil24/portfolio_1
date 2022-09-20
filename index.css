@@ -376,6 +376,12 @@ header li a:hover {
 .page2 .site7 {
   background-image: url(images/angular.png);
 }
+.page2 .site7p1 {
+  background-image: url(images/angularnode.png);
+}
+.page2 .site7p2 {
+  background-image: url(images/ionic.png);
+}
 .page2 .site8 {
   background-image: url(images/webpack.png);
 }

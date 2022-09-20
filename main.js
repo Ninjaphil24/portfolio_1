@@ -148,6 +148,22 @@ const popUpInfo = [{
   sourceButton: '<a href="https://github.com/Ninjaphil24/angular-crash" target="_blank" rel=”noopener”>See Source <img src="images/gitIcon.png" alt="Source Icon"></a>',
 },
 {
+  title: 'Angular and Node.js',
+  badges: '<li>html</li><li>css</li><li>bootstrap</li><li>javascript</li><li>typescript</li><li>angular</li><li>node.js</li><li>mysql</li>',
+  image: '<img src="images/angularnode.png" alt="Angular">',
+  text: 'Tutorial in Angular and Node.js by Num of Code.  Not deployed.',
+  liveButton: '<a href="">See Live <img src="images/liveIcon.png" alt="Live Icon"></a>',
+  sourceButton: '<a href="https://github.com/Ninjaphil24/angularnode" target="_blank" rel=”noopener”>See Source <img src="images/gitIcon.png" alt="Source Icon"></a>',
+},
+{
+  title: 'Ionic Weather Forecast',
+  badges: '<li>html</li><li>css</li><li>javascript</li><li>typescript</li><li>angular</li><li>ionic</li>',
+  image: '<img src="images/ioniclandscape.png" alt="Angular">',
+  text: 'Tutorial in Angular and Node.js by Num of Code.  Not deployed.',
+  liveButton: '<a href="">See Live <img src="images/liveIcon.png" alt="Live Icon"></a>',
+  sourceButton: '<a href="https://github.com/Ninjaphil24/ionicweather" target="_blank" rel=”noopener”>See Source <img src="images/gitIcon.png" alt="Source Icon"></a>',
+},
+{
   title: 'Webpack',
   badges: '<li>html</li><li>css</li><li>javascript</li>',
   image: '<img src="images/webpack.png" alt="Webpack">',
@@ -225,14 +241,20 @@ click12.addEventListener('click', () => { toggle(11); });
 const click13 = document.querySelector('.site7');
 click13.addEventListener('click', () => { toggle(12); });
 
-const click14 = document.querySelector('.site8');
+const click14 = document.querySelector('.site7p1');
 click14.addEventListener('click', () => { toggle(13); });
 
-const click15 = document.querySelector('.site9');
+const click15 = document.querySelector('.site7p2');
 click15.addEventListener('click', () => { toggle(14); });
 
-const click16 = document.querySelector('.site10');
+const click16 = document.querySelector('.site8');
 click16.addEventListener('click', () => { toggle(15); });
+
+const click17 = document.querySelector('.site9');
+click17.addEventListener('click', () => { toggle(16); });
+
+const click18 = document.querySelector('.site10');
+click18.addEventListener('click', () => { toggle(17); });
 
 const form = document.getElementById('form');
 const mail = document.getElementById('mail');
