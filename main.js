@@ -159,7 +159,7 @@ const popUpInfo = [{
   title: 'Ionic Weather Forecast',
   badges: '<li>html</li><li>css</li><li>javascript</li><li>typescript</li><li>angular</li><li>ionic</li>',
   image: '<img src="images/ioniclandscape.png" alt="Angular">',
-  text: 'Tutorial in Angular and Node.js by Num of Code.  Not deployed.',
+  text: 'Tutorial in Ionic by CodeXpression.  Not deployed.',
   liveButton: '<a href="">See Live <img src="images/liveIcon.png" alt="Live Icon"></a>',
   sourceButton: '<a href="https://github.com/Ninjaphil24/ionicweather" target="_blank" rel=”noopener”>See Source <img src="images/gitIcon.png" alt="Source Icon"></a>',
 },
