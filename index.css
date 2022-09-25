@@ -182,6 +182,12 @@ header li a:hover {
   background-color: #ff6b00;
 }
 
+.home .buttontypeA a:hover {
+  background-color: #fff5e1;
+  border: 1px solid #ff6b00;
+  color: #ff6b00;
+}
+
 .page2 {
   min-height: 100vh;
   padding: 0 141px;
