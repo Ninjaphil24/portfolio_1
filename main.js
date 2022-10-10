@@ -152,7 +152,7 @@ const popUpInfo = [{
   badges: '<li>html</li><li>css</li><li>bootstrap</li><li>javascript</li><li>typescript</li><li>angular</li><li>node.js</li><li>mysql</li>',
   image: '<img src="images/angularnode.png" alt="Angular">',
   text: 'Tutorial in Angular and Node.js by Num of Code.  Not deployed.',
-  liveButton: '<a href="">See Live <img src="images/liveIcon.png" alt="Live Icon"></a>',
+  liveButton: '<a href="https://angularnode-rho.vercel.app/" target="_blank" rel=”noopener”>See Live <img src="images/liveIcon.png" alt="Live Icon"></a>',
   sourceButton: '<a href="https://github.com/Ninjaphil24/angularnode" target="_blank" rel=”noopener”>See Source <img src="images/gitIcon.png" alt="Source Icon"></a>',
 },
 {
@@ -160,7 +160,7 @@ const popUpInfo = [{
   badges: '<li>html</li><li>css</li><li>javascript</li><li>typescript</li><li>angular</li><li>ionic</li>',
   image: '<img src="images/ioniclandscape.png" alt="Angular">',
   text: 'Tutorial in Ionic by CodeXpression.  Not deployed.',
-  liveButton: '<a href="">See Live <img src="images/liveIcon.png" alt="Live Icon"></a>',
+  liveButton: '<a href="https://ionicweather.vercel.app/landing" target="_blank" rel=”noopener”>See Live <img src="images/liveIcon.png" alt="Live Icon"></a>',
   sourceButton: '<a href="https://github.com/Ninjaphil24/ionicweather" target="_blank" rel=”noopener”>See Source <img src="images/gitIcon.png" alt="Source Icon"></a>',
 },
 {
