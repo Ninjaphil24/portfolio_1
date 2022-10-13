@@ -340,6 +340,10 @@ header li a:hover {
 }
 
 .page2 .site1p5 {
+  background-image: url(images/symfony.png);
+}
+
+.page2 .site1p6 {
   background-image: url(images/laragigs.png);
 }
 

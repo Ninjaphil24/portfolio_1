@@ -60,6 +60,14 @@ const popUpInfo = [{
   sourceButton: '<a href="https://github.com/Ninjaphil24/spoiledeggs" target="_blank" rel=”noopener”>See Source <img src="images/gitIcon.png" alt="Source Icon"></a>',
 },
 {
+  title: 'Symfony Movie App',
+  badges: '<li>html</li><li>tailwind</li><li>php</li><li>symfony</li><li>twig</li><li>mysql</li><li>javascript</li>',
+  image: '<img src="images/symfony.png" alt="Symfony Movies">',
+  text: 'A study in the use of the Symfony Framework for php, in this case a basic setup for a movie review site, based on a tutorial by Code with Dary.',
+  liveButton: '<a href="http://symfonymovie.herokuapp.com/movies" target="_blank" rel=”noopener”>See Live <img src="images/liveIcon.png" alt="Live Icon"></a>',
+  sourceButton: '<a href="https://github.com/Ninjaphil24/symfonymovies" target="_blank" rel=”noopener”>See Source <img src="images/gitIcon.png" alt="Source Icon"></a>',
+},
+{
   title: 'Laravel Demo',
   badges: '<li>html</li><li>css</li><li>php/laravel</li><li>mysql</li>',
   image: '<img src="images/laragigs.png" alt="Laravel Demo">',
@@ -211,50 +219,53 @@ click2.addEventListener('click', () => { toggle(1); });
 const click3 = document.querySelector('.site1p5');
 click3.addEventListener('click', () => { toggle(2); });
 
-const click4 = document.querySelector('.site2');
+const click4 = document.querySelector('.site1p6');
 click4.addEventListener('click', () => { toggle(3); });
 
-const click5 = document.querySelector('.site2p5');
+const click5 = document.querySelector('.site2');
 click5.addEventListener('click', () => { toggle(4); });
 
-const click6 = document.querySelector('.site3');
+const click6 = document.querySelector('.site2p5');
 click6.addEventListener('click', () => { toggle(5); });
 
-const click7 = document.querySelector('.site3p5');
+const click7 = document.querySelector('.site3');
 click7.addEventListener('click', () => { toggle(6); });
 
-const click8 = document.querySelector('.site4');
+const click8 = document.querySelector('.site3p5');
 click8.addEventListener('click', () => { toggle(7); });
 
-const click9 = document.querySelector('.site4p5');
+const click9 = document.querySelector('.site4');
 click9.addEventListener('click', () => { toggle(8); });
 
-const click10 = document.querySelector('.site5');
+const click10 = document.querySelector('.site4p5');
 click10.addEventListener('click', () => { toggle(9); });
 
-const click11 = document.querySelector('.site5p5');
+const click11 = document.querySelector('.site5');
 click11.addEventListener('click', () => { toggle(10); });
 
-const click12 = document.querySelector('.site6');
+const click12 = document.querySelector('.site5p5');
 click12.addEventListener('click', () => { toggle(11); });
 
-const click13 = document.querySelector('.site7');
+const click13 = document.querySelector('.site6');
 click13.addEventListener('click', () => { toggle(12); });
 
-const click14 = document.querySelector('.site7p1');
+const click14 = document.querySelector('.site7');
 click14.addEventListener('click', () => { toggle(13); });
 
-const click15 = document.querySelector('.site7p2');
+const click15 = document.querySelector('.site7p1');
 click15.addEventListener('click', () => { toggle(14); });
 
-const click16 = document.querySelector('.site8');
+const click16 = document.querySelector('.site7p2');
 click16.addEventListener('click', () => { toggle(15); });
 
-const click17 = document.querySelector('.site9');
+const click17 = document.querySelector('.site8');
 click17.addEventListener('click', () => { toggle(16); });
 
-const click18 = document.querySelector('.site10');
+const click18 = document.querySelector('.site9');
 click18.addEventListener('click', () => { toggle(17); });
+
+const click19 = document.querySelector('.site10');
+click19.addEventListener('click', () => { toggle(18); });
 
 const form = document.getElementById('form');
 const mail = document.getElementById('mail');
