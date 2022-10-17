@@ -41,15 +41,19 @@ var currentScrollPos = window.pageYOffset;
   //         counter=1;
   //     }
   // },3000);
-
+  function toggle2(){
+    var trailer= document.querySelector(".trailer")
+    trailer.classList.toggle("active")
+  }
 
 const popUpInfo = [{
-  title: 'Offenbach Grand Prix Singing Competition',
+  title: 'Offenbach GP',
   badges: '<li>html</li><li>css</li><li>php</li><li>ajax</li><li>jquery</li><li>mysql</li><li>javascript</li>',
   image: '<img src="images/offenbach.png" alt="Offenbach Grand Prix Homepage">',
   text: 'A fully online opera-singing competition, where the audience can comment and applaud, and where the jury comments in full view of the audience.  Automated application process, which includes video and biog upload, as well as an automatically generated contract in the end.',
-  liveButton: '<a href="http://offenbachdemo.eu5.org/" rel=”noopener” target="_blank">See Live <img src="images/liveIcon.png" alt="Live Icon"></a>',
-  sourceButton: '<a href="https://github.com/Ninjaphil24/offenbachgp" target="_blank" rel=”noopener”>See Source <img src="images/gitIcon.png" alt="Source Icon"></a>',
+  liveButton: '<a href="http://offenbachdemo.eu5.org/" rel=”noopener” target="_blank">See&nbspLive&nbsp<i class="fa fa-arrow-circle-o-up" aria-hidden="true"></i></a>',
+  sourceButton: '<a href="https://github.com/Ninjaphil24/offenbachgp" target="_blank" rel=”noopener”>See&nbspSource&nbsp<i class="fa fa-github" aria-hidden="true"></i></a>',
+  videoButton: '<a href="https://github.com/Ninjaphil24/offenbachgp" target="_blank" rel=”noopener”>See&nbspVideo&nbsp<i class="fa fa-youtube-play" aria-hidden="true"></i></a>',
 },
 {
   title: 'Spoiled Eggs',
@@ -208,6 +212,7 @@ function toggle(arrayNumber) {
   document.getElementById('text').innerHTML = popUpInfo[arrayNumber].text;
   document.getElementById('live').innerHTML = popUpInfo[arrayNumber].liveButton;
   document.getElementById('source').innerHTML = popUpInfo[arrayNumber].sourceButton;
+  document.getElementById('video').innerHTML = popUpInfo[arrayNumber].videoButton;
 }
 
 const click1 = document.getElementById('offenbach');

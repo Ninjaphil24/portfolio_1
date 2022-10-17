@@ -60,7 +60,7 @@
         <h3>Web Developer</h3>
         <p>Professional portfolio of web development, which includes past professional sites, as well as several projects created for educational purposes.</p>
         <div class="buttontypeA">
-            <a href="https://youtu.be/mCJS_p44yUo" target="_blank" rel=”noopener”>Video Presentation</a>
+            <a onclick="toggle2();">Video Presentation</a>
         </div>
         </div>
         
@@ -74,7 +74,10 @@
     </aside>   
     
 </section> 
-
+<div class="trailer">
+    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/mCJS_p44yUo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <img src="images/close.png" class="close" onclick="toggle2();">
+  </div>
 <div class="popUp" id="popUp">
     <div class="closer">
         <a onclick="toggle()"><i class="fa fa-times" aria-hidden="true"></i></a>        
@@ -88,7 +91,8 @@
         <p id="text"> </p>
         <ul>
             <li id="live"></li>
-            <li id="source"><a>See Source <img src="images/gitIcon.png" alt="Git Icon"></a></li>
+            <li id="source"></li>
+            <li id="video"></li>
         </ul>
     </div>
     
