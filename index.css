@@ -189,7 +189,16 @@ header li a:hover {
   cursor: pointer;
 }
 
-.trailer
+.vidbuttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.vidbuttons .buttontypeA {
+  margin-bottom: 43px;
+}
+
+.trailer, .trailer2
 {
   position: fixed;
   top: 50%;
@@ -205,15 +214,15 @@ header li a:hover {
   visibility: hidden;
   opacity: 0;
 }
-.trailer.active
+.trailer.active, .trailer2.active
 {
   visibility: visible;
   opacity: 1;
 }
-.trailer iframe
+.trailer iframe, .trailer2 iframe
 {
   position: relative;
-  max-width: 900px;
+  
   outline: none;
 }
 .close
@@ -1034,13 +1043,14 @@ header li a:hover {
 
   .home .text {
     padding-left: 5%;
+    margin-top: 25px;
   }
 
   .home .text h2 {
     font-family: 'Crete Round', serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 56px;
+    font-size: 26px;
     line-height: 64px;
     letter-spacing: 0.37px;
     color: #f55800;
@@ -1298,9 +1308,11 @@ header li a:hover {
     grid-template-rows: 229px 238px 278px 150px 149px;
   }
 
-  .trailer iframe
+  .trailer iframe, .trailer2 iframe
   {
     max-width: 90%;
+    max-height: 90%;
   }
+
 
 }
