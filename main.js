@@ -41,15 +41,24 @@ var currentScrollPos = window.pageYOffset;
   //         counter=1;
   //     }
   // },3000);
+  function toggle2(){
+    var trailer= document.querySelector(".trailer")
+    trailer.classList.toggle("active")
+  }
 
+  function toggle3(){
+    var trailer= document.querySelector(".trailer2")
+    trailer.classList.toggle("active")
+  }
 
 const popUpInfo = [{
-  title: 'Offenbach Grand Prix Singing Competition',
+  title: 'Offenbach GP',
   badges: '<li>html</li><li>css</li><li>php</li><li>ajax</li><li>jquery</li><li>mysql</li><li>javascript</li>',
   image: '<img src="images/offenbach.png" alt="Offenbach Grand Prix Homepage">',
   text: 'A fully online opera-singing competition, where the audience can comment and applaud, and where the jury comments in full view of the audience.  Automated application process, which includes video and biog upload, as well as an automatically generated contract in the end.',
-  liveButton: '<a href="http://offenbachdemo.eu5.org/" rel=”noopener” target="_blank">See Live <img src="images/liveIcon.png" alt="Live Icon"></a>',
-  sourceButton: '<a href="https://github.com/Ninjaphil24/offenbachgp" target="_blank" rel=”noopener”>See Source <img src="images/gitIcon.png" alt="Source Icon"></a>',
+  liveButton: '<a href="http://offenbachdemo.eu5.org/" rel=”noopener” target="_blank">See&nbspLive&nbsp<i class="fa fa-arrow-circle-o-up" aria-hidden="true"></i></a>',
+  sourceButton: '<a href="https://github.com/Ninjaphil24/offenbachgp" target="_blank" rel=”noopener”>See&nbspSource&nbsp<i class="fa fa-github" aria-hidden="true"></i></a>',
+  videoButton: '<a href="https://youtu.be/mCJS_p44yUo?t=24" target="_blank" rel=”noopener”>See&nbspVideo&nbsp<i class="fa fa-youtube-play" aria-hidden="true"></i></a>',
 },
 {
   title: 'Spoiled Eggs',
@@ -58,6 +67,7 @@ const popUpInfo = [{
   text: 'Spoiled Eggs was the original template for 2 projects and those two projects were used to promote Spoiled Eggs.  It is a review site for opera, where people can rage click "applause" or "throwing eggs" and of course comment.',
   liveButton: '<a href="https://spoiledeggs.eu5.org/" target="_blank" rel=”noopener”>See Live <img src="images/liveIcon.png" alt="Live Icon"></a>',
   sourceButton: '<a href="https://github.com/Ninjaphil24/spoiledeggs" target="_blank" rel=”noopener”>See Source <img src="images/gitIcon.png" alt="Source Icon"></a>',
+  videoButton: '<a href="https://youtu.be/mCJS_p44yUo?t=747" target="_blank" rel=”noopener”>See&nbspVideo&nbsp<i class="fa fa-youtube-play" aria-hidden="true"></i></a>',
 },
 {
   title: 'Symfony Movie App',
@@ -66,6 +76,7 @@ const popUpInfo = [{
   text: 'A study in the use of the Symfony Framework for php, in this case a basic setup for a movie review site, based on a tutorial by Code with Dary.',
   liveButton: '<a href="http://symfonymovie.herokuapp.com/movies" target="_blank" rel=”noopener”>See Live <img src="images/liveIcon.png" alt="Live Icon"></a>',
   sourceButton: '<a href="https://github.com/Ninjaphil24/symfonymovies" target="_blank" rel=”noopener”>See Source <img src="images/gitIcon.png" alt="Source Icon"></a>',
+  videoButton: '<a href="https://youtu.be/e4Ke6k8XeoM" target="_blank" rel=”noopener”>See&nbspVideo&nbsp<i class="fa fa-youtube-play" aria-hidden="true"></i></a>',
 },
 {
   title: 'Laravel Demo',
@@ -74,6 +85,7 @@ const popUpInfo = [{
   text: 'A demo of full CRUD functionality using Laravel.  Note that the demo version does not allow for chmod 777 on deploy, therefore uploading logos is not possible, even though the app can do it.  Tutorial by Brad Traversy.',
   liveButton: '<a href="https://laragigsdemo.herokuapp.com/" target="_blank" rel=”noopener”>See Live <img src="images/liveIcon.png" alt="Live Icon"></a>',
   sourceButton: '<a href="https://github.com/Ninjaphil24/laragigs" target="_blank" rel=”noopener”>See Source <img src="images/gitIcon.png" alt="Source Icon"></a>',
+  videoButton: '<a href="https://youtu.be/mCJS_p44yUo?t=1101" target="_blank" rel=”noopener”>See&nbspVideo&nbsp<i class="fa fa-youtube-play" aria-hidden="true"></i></a>',
 },
 {
   title: 'Classica Tournée',
@@ -82,6 +94,7 @@ const popUpInfo = [{
   text: 'A site meant as an extension of Opera Classica Europa`s Inthega classifieds, which is a platform intended on facilitating touring in Germany.',
   liveButton: '<a href="https://ninjaphil24.github.io/ocetournee/" target="_blank" rel="noopener">See Live <img src="images/liveIcon.png" alt="Live Icon"></a>',
   sourceButton: '<a href="https://github.com/Ninjaphil24/ocetournee" target="_blank" rel=”noopener”>See Source <img src="images/gitIcon.png" alt="Source Icon"></a>',
+  videoButton: '<a href="https://youtu.be/mCJS_p44yUo?t=1288" target="_blank" rel=”noopener”>See&nbspVideo&nbsp<i class="fa fa-youtube-play" aria-hidden="true"></i></a>',
 },
 {
   title: 'Weather App',
@@ -90,6 +103,7 @@ const popUpInfo = [{
   text: "A weather app meant as an exercise in json and api.",
   liveButton: '<a href="https://ninjaphil24.github.io/OdinWeatherApp/" target="_blank" rel="noopener">See Live <img src="images/liveIcon.png" alt="Live Icon"></a>',
   sourceButton: '<a href="https://github.com/Ninjaphil24/OdinWeatherApp" target="_blank" rel=”noopener”>See Source <img src="images/gitIcon.png" alt="Source Icon"></a>',
+  videoButton: '<a href="https://youtu.be/mCJS_p44yUo?t=1351" target="_blank" rel=”noopener”>See&nbspVideo&nbsp<i class="fa fa-youtube-play" aria-hidden="true"></i></a>',
 },
 {
   title: 'Opera Pathway',
@@ -98,6 +112,7 @@ const popUpInfo = [{
   text: "The advertisement and application process for Opera Classica Europa's Opera Studio program, called the Opera Pathway.",
   liveButton: '<a href="https://ninjaphil24.github.io/pathwayperformance/" target="_blank" rel=”noopener”>See Live <img src="images/liveIcon.png" alt="Live Icon"></a>',
   sourceButton: '<a href="https://github.com/Ninjaphil24/pathwayperformance" target="_blank" rel=”noopener”>See Source <img src="images/gitIcon.png" alt="Source Icon"></a>',
+  videoButton: '<a href="https://youtu.be/mCJS_p44yUo?t=1371" target="_blank" rel=”noopener”>See&nbspVideo&nbsp<i class="fa fa-youtube-play" aria-hidden="true"></i></a>',
 },
 {
   title: 'Local Storage (Add Student)',
@@ -130,6 +145,7 @@ const popUpInfo = [{
   text: 'A demo of a possible portfolio site using three.js.',
   liveButton: '<a href="https://ninjaphil24.github.io/threedjavascript/" target="_blank" rel="noopener">See Live <img src="images/liveIcon.png" alt="Live Icon"></a>',
   sourceButton: '<a href="https://github.com/Ninjaphil24/threedjavascript" target="_blank" rel=”noopener”>See Source <img src="images/gitIcon.png" alt="Source Icon"></a>',
+  videoButton: '<a href="https://youtu.be/mCJS_p44yUo?t=1555" target="_blank" rel=”noopener”>See&nbspVideo&nbsp<i class="fa fa-youtube-play" aria-hidden="true"></i></a>',
 },
 {
   title: 'Calculator',
@@ -154,6 +170,7 @@ const popUpInfo = [{
   text: 'Tutorial in Angular by Brad Traversy.  Not deployed.',
   liveButton: '<a href="">See Live <img src="images/liveIcon.png" alt="Live Icon"></a>',
   sourceButton: '<a href="https://github.com/Ninjaphil24/angular-crash" target="_blank" rel=”noopener”>See Source <img src="images/gitIcon.png" alt="Source Icon"></a>',
+  videoButton: '<a href="https://youtu.be/mCJS_p44yUo?t=1593" target="_blank" rel=”noopener”>See&nbspVideo&nbsp<i class="fa fa-youtube-play" aria-hidden="true"></i></a>',
 },
 {
   title: 'Angular and Node.js',
@@ -162,6 +179,7 @@ const popUpInfo = [{
   text: 'Tutorial in Angular and Node.js by Num of Code.  Not deployed.',
   liveButton: '<a href="https://angularnode-rho.vercel.app/" target="_blank" rel=”noopener”>See Live <img src="images/liveIcon.png" alt="Live Icon"></a>',
   sourceButton: '<a href="https://github.com/Ninjaphil24/angularnode" target="_blank" rel=”noopener”>See Source <img src="images/gitIcon.png" alt="Source Icon"></a>',
+  videoButton: '<a href="https://youtu.be/mCJS_p44yUo?t=1670" target="_blank" rel=”noopener”>See&nbspVideo&nbsp<i class="fa fa-youtube-play" aria-hidden="true"></i></a>',
 },
 {
   title: 'Ionic Weather Forecast',
@@ -170,6 +188,7 @@ const popUpInfo = [{
   text: 'Tutorial in Ionic by CodeXpression.  Not deployed.',
   liveButton: '<a href="https://ionicweather.vercel.app/landing" target="_blank" rel=”noopener”>See Live <img src="images/liveIcon.png" alt="Live Icon"></a>',
   sourceButton: '<a href="https://github.com/Ninjaphil24/ionicweather" target="_blank" rel=”noopener”>See Source <img src="images/gitIcon.png" alt="Source Icon"></a>',
+  videoButton: '<a href="https://youtu.be/mCJS_p44yUo?t=1868" target="_blank" rel=”noopener”>See&nbspVideo&nbsp<i class="fa fa-youtube-play" aria-hidden="true"></i></a>',
 },
 {
   title: 'Webpack',
@@ -178,6 +197,7 @@ const popUpInfo = [{
   text: 'Tutorial in Webpack by Swashbuckling with Code.  Not deployed.',
   liveButton: '<a href="#portfolio">See Live <img src="images/liveIcon.png" alt="Live Icon"></a>',
   sourceButton: '<a href="https://github.com/Ninjaphil24/webpack3" target="_blank" rel=”noopener”>See Source <img src="images/gitIcon.png" alt="Source Icon"></a>',
+  videoButton: '<a href="https://youtu.be/mCJS_p44yUo?t=1913" target="_blank" rel=”noopener”>See&nbspVideo&nbsp<i class="fa fa-youtube-play" aria-hidden="true"></i></a>',
 },
 {
   title: 'Coding Portfolio',
@@ -186,6 +206,7 @@ const popUpInfo = [{
   text: 'My personal coding portfolio, as initiated during my time at microverse.  Portfolio includes some interesting css and javascript in the "portfolio" section.',
   liveButton: '<a href="https://ninjaphil24.github.io/portfolio_1/" target="_blank" rel=”noopener”>See Live <img src="images/liveIcon.png" alt="Live Icon"></a>',
   sourceButton: '<a href="https://github.com/Ninjaphil24/portfolio_1" target="_blank" rel=”noopener”>See Source <img src="images/gitIcon.png" alt="Source Icon"></a>',
+  videoButton: '<a href="https://youtu.be/mCJS_p44yUo?t=2001" target="_blank" rel=”noopener”>See&nbspVideo&nbsp<i class="fa fa-youtube-play" aria-hidden="true"></i></a>',
 },
 {
   title: 'Singing Porfolio',
@@ -194,6 +215,7 @@ const popUpInfo = [{
   text: "My personal singing portfolio and also the first site I ever coded.  In it's initial form it was merely a list, but later I created an interesting, albeit somewhat glitchy, navbar system.",
   liveButton: '<a href="https://philipmodinos.ueuo.com/" target="_blank" rel=”noopener”>See Live <img src="images/liveIcon.png" alt="Live Icon"></a>',
   sourceButton: '<a href="https://github.com/Ninjaphil24/singingportfolio" target="_blank" rel=”noopener”>See Source <img src="images/gitIcon.png" alt="Source Icon"></a>',
+  videoButton: '<a href="https://youtu.be/mCJS_p44yUo?t=1958" target="_blank" rel=”noopener”>See&nbspVideo&nbsp<i class="fa fa-youtube-play" aria-hidden="true"></i></a>',
 }];
 
 function toggle(arrayNumber) {
@@ -208,6 +230,7 @@ function toggle(arrayNumber) {
   document.getElementById('text').innerHTML = popUpInfo[arrayNumber].text;
   document.getElementById('live').innerHTML = popUpInfo[arrayNumber].liveButton;
   document.getElementById('source').innerHTML = popUpInfo[arrayNumber].sourceButton;
+  document.getElementById('video').innerHTML = popUpInfo[arrayNumber].videoButton;
 }
 
 const click1 = document.getElementById('offenbach');
